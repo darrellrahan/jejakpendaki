@@ -18,9 +18,11 @@
   <body class="font-roboto">
     <section id="header">
       <header
-        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-10 z-10"
+        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-10 z-20"
       >
-        <img src="./src/assets/logo.svg" alt="logo" width="70" height="70" />
+        <a href="/">
+          <img src="./src/assets/logo.svg" alt="logo" width="70" height="70" />
+        </a>
         <div class="hidden lg:flex items-center gap-12 text-white text-lg">
           <a href="/">Home</a>
           <a href="/">Blog</a>
@@ -35,7 +37,9 @@
       </header>
     </section>
     <section id="hero">
-      <div class="h-screen relative flex items-center justify-center">
+      <div
+        class="h-screen fixed inset-x-0 top-0 flex items-center justify-center"
+      >
         <video
           playsinline
           autoplay
@@ -61,6 +65,77 @@
               class="ph-bold ph-magnifying-glass w-12 h-12 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl"
             ></i>
           </button>
+        </div>
+        <a
+          href="/"
+          class="flex flex-col gap-3 items-center absolute bottom-8 justify-center text-white text-xl animate-bounce z-20"
+          ><span>Scroll for more</span><i class="ph ph-arrow-down text-2xl"></i
+        ></a>
+      </div>
+    </section>
+    <div class="h-screen"></div>
+    <img
+      src="./src/assets/cloud.svg"
+      alt="cloud"
+      width="2000"
+      height="2000"
+      class="translate-y-36 z-20 relative w-full"
+    />
+    <section id="key-features">
+      <div class="px-6 py-16 bg-white z-20 relative h-screen">
+        <h1 class="text-xl font-calistoga text-[2rem] text-center mb-12">
+          Our Key Features
+        </h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 px-8">
+          <div
+            class="pb-10 border-b-2 lg:border-r-2 lg:border-b-0 lg:pr-10 lg:pb-0 border-[#BA4B1D]"
+          >
+            <div class="flex items-center gap-4 mb-2">
+              <i class="ph ph-hand-coins text-[2.5rem] basis-1/6"></i>
+              <h4 class="font-semibold text-xl basis-5/6">
+                Pendakian yang Bertanggung Jawab
+              </h4>
+            </div>
+            <div class="flex gap-4">
+              <div class="basis-1/6"></div>
+              <p class="basis-5/6">
+                Kami menekankan pendakian bertanggung jawab melalui persiapan
+                matang terhadap budaya dan alam.
+              </p>
+            </div>
+          </div>
+          <div
+            class="pb-10 border-b-2 lg:border-r-2 lg:border-b-0 lg:pr-10 lg:pb-0 border-[#BA4B1D]"
+          >
+            <div class="flex items-center gap-4 mb-2">
+              <i class="ph ph-compass text-[2.5rem] basis-1/6"></i>
+              <h4 class="font-semibold text-xl basis-5/6">
+                Navigasi yang Mudah di Gunung
+              </h4>
+            </div>
+            <div class="flex gap-4">
+              <div class="basis-1/6"></div>
+              <p class="basis-5/6">
+                Kami menyediakan informasi tentang rute pendakian populer, aman,
+                dan objek wisata sekitarnya yang mudah diakses.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-4 mb-2">
+              <i class="ph ph-person-simple-walk text-[2.5rem] basis-1/6"></i>
+              <h4 class="font-semibold text-xl basis-5/6">
+                Dukungan Terbaik untuk Petualangan Anda
+              </h4>
+            </div>
+            <div class="flex gap-4">
+              <div class="basis-1/6"></div>
+              <p class="basis-5/6">
+                Kami memberikan dukungan terbaik melalui layanan profesional,
+                termasuk izin dan penyewaan porter yang handal.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
