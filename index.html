@@ -13,6 +13,25 @@
       rel="stylesheet"
     />
     <link href="./dist/output.css" rel="stylesheet" />
+    <style>
+      .semeru {
+        background-image: url("./src/assets/semeru.png");
+      }
+      .rinjani {
+        background-image: url("./src/assets/rinjani.png");
+      }
+      .merapi {
+        background-image: url("./src/assets/merapi.png");
+      }
+      @media (min-width: 1024px) {
+        .semeru {
+          background-image: url("./src/assets/semeru-lg.png");
+        }
+        .merapi {
+          background-image: url("./src/assets/merapi-lg.png");
+        }
+      }
+    </style>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="font-roboto">
@@ -166,7 +185,7 @@
         </p>
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 text-white">
           <div
-            class="lg:col-span-3 h-[25rem] lg:h-[17rem] bg-[url('./src/assets/semeru.png')] lg:bg-[url('/src/assets/semeru-lg.png')] bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
+            class="lg:col-span-3 h-[25rem] lg:h-[17rem] semeru bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
           >
             <div class="absolute inset-0 bg-black/40 rounded-[0.625rem]"></div>
             <div class="z-10 relative flex justify-between">
@@ -195,7 +214,7 @@
             </div>
           </div>
           <div
-            class="lg:row-span-2 h-[25rem] lg:h-auto bg-[url('./src/assets/rinjani.png')] bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
+            class="lg:row-span-2 h-[25rem] lg:h-auto rinjani bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
           >
             <div class="absolute inset-0 bg-black/40 rounded-[0.625rem]"></div>
             <div class="z-10 relative flex justify-between">
@@ -222,7 +241,7 @@
             </div>
           </div>
           <div
-            class="lg:col-span-3 h-[25rem] lg:h-[17rem] bg-[url('./src/assets/merapi.png')] lg:bg-[url('/src/assets/merapi-lg.png')] bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
+            class="lg:col-span-3 h-[25rem] lg:h-[17rem] merapi bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
           >
             <div class="absolute inset-0 bg-black/40 rounded-[0.625rem]"></div>
             <div class="z-10 relative flex justify-between">
