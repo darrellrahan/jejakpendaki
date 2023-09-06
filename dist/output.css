@@ -555,16 +555,12 @@ video {
   right: 0px;
 }
 
-.bottom-8 {
-  bottom: 2rem;
+.bottom-16 {
+  bottom: 4rem;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.bottom-16 {
-  bottom: 4rem;
 }
 
 .z-10 {
@@ -768,30 +764,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/src\/assets\/merapi\.png\'\)\] {
-  background-image: url('/src/assets/merapi.png');
-}
-
-.bg-\[url\(\'\/src\/assets\/rinjani\.png\'\)\] {
-  background-image: url('/src/assets/rinjani.png');
-}
-
-.bg-\[url\(\'\/src\/assets\/semeru\.png\'\)\] {
-  background-image: url('/src/assets/semeru.png');
-}
-
-.bg-\[url\(\'\.\/src\/assets\/merapi\.png\'\)\] {
-  background-image: url('./src/assets/merapi.png');
-}
-
-.bg-\[url\(\'\.\/src\/assets\/rinjani\.png\'\)\] {
-  background-image: url('./src/assets/rinjani.png');
-}
-
-.bg-\[url\(\'\.\/src\/assets\/semeru\.png\'\)\] {
-  background-image: url('./src/assets/semeru.png');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -919,6 +891,14 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-linear {
+  transition-timing-function: linear;
+}
+
 @media (min-width: 1024px) {
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
@@ -979,14 +959,6 @@ video {
 
   .lg\:border-r-2 {
     border-right-width: 2px;
-  }
-
-  .lg\:bg-\[url\(\'\/src\/assets\/merapi-lg\.png\'\)\] {
-    background-image: url('/src/assets/merapi-lg.png');
-  }
-
-  .lg\:bg-\[url\(\'\/src\/assets\/semeru-lg\.png\'\)\] {
-    background-image: url('/src/assets/semeru-lg.png');
   }
 
   .lg\:px-10 {

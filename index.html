@@ -37,7 +37,8 @@
   <body class="font-roboto">
     <section id="header">
       <header
-        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-10 z-30"
+        id="header-fr"
+        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-10 z-30 duration-300 ease-linear text-white"
       >
         <a href="/">
           <img
@@ -47,11 +48,14 @@
             height="100"
           />
         </a>
-        <div class="hidden lg:flex items-center gap-12 text-white text-lg">
+        <div class="hidden lg:flex items-center gap-12 text-lg">
           <a href="/">Home</a>
           <a href="/">Blog</a>
           <a href="/">About Us</a>
-          <a href="/" class="bg-[#BA4B1D] py-1.5 px-7 rounded-[0.625rem]">
+          <a
+            href="/"
+            class="bg-[#BA4B1D] py-1.5 px-7 rounded-[0.625rem] text-white"
+          >
             Login
           </a>
         </div>
@@ -181,7 +185,8 @@
           Most Visited Mountains
         </h1>
         <p class="text-center mb-10">
-          Gunung dengan pendaki terbanyak<br />setiap tahunnya
+          Gunung dengan pendaki terbanyak<br class="lg:hidden" />
+          setiap tahunnya
         </p>
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 text-white">
           <div
@@ -272,5 +277,26 @@
         </div>
       </div>
     </section>
+
+    <script>
+      const header = document.getElementById("header-fr");
+      window.addEventListener("scroll", () => {
+        header.style.backgroundColor =
+          window.pageYOffset > 16 ? "#FFF" : "transparent";
+        header.style.color = window.pageYOffset > 16 ? "#000" : "#FFF";
+        header.style.padding =
+          window.pageYOffset > 16
+            ? screen.width > 1024
+              ? "0.5rem 2.5rem"
+              : "0.5rem 1.5rem"
+            : screen.width > 1024
+            ? "1.5rem 2.5rem"
+            : "1.5rem 1.5rem";
+        header.style.boxShadow =
+          window.pageYOffset > 16
+            ? "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
+            : "0 0 #0000";
+      });
+    </script>
   </body>
 </html>
