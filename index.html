@@ -49,7 +49,7 @@
     <section id="header">
       <header
         id="header-fr"
-        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-10 z-30 duration-300 ease-linear text-white"
+        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-20 z-30 duration-300 ease-linear text-white"
       >
         <a href="/">
           <img
@@ -123,7 +123,7 @@
       />
     </section>
     <section id="key-features">
-      <div class="px-6 lg:px-10 py-16 bg-white z-20 relative">
+      <div class="px-6 lg:px-20 py-16 bg-white z-20 relative">
         <h1 class="text-3xl lg:text-4xl font-calistoga text-center mb-12">
           Our Key Features
         </h1>
@@ -172,7 +172,7 @@
                 class="ph ph-person-simple-walk text-[2.5rem] basis-1/6 lg:basis-[12%]"
               ></i>
               <h4 class="font-semibold text-lg basis-5/6 lg:basis-[88%]">
-                Dukungan Terbaik untuk Petualangan Anda
+                Dukungan Terbaik untuk Petualangan
               </h4>
             </div>
             <div class="flex gap-4">
@@ -187,7 +187,7 @@
       </div>
     </section>
     <section id="most-visited">
-      <div class="bg-white z-20 relative px-6 lg:px-10 py-16 lg:py-24">
+      <div class="bg-white z-20 relative px-6 lg:px-20 py-16 lg:py-24">
         <h1
           class="text-3xl lg:text-4xl font-calistoga text-center leading-snug mb-4"
         >
@@ -288,7 +288,7 @@
     </section>
     <section id="trending-blog">
       <div
-        class="bg-[#BA4B1D] text-white z-20 relative px-6 lg:px-10 py-16 lg:py-16"
+        class="bg-[#BA4B1D] text-white z-20 relative px-6 lg:px-20 py-16 lg:py-16"
       >
         <div class="flex justify-between items-center mb-10 lg:mb-12">
           <h1 class="text-3xl lg:text-4xl font-calistoga">Trending Blog</h1>
@@ -415,7 +415,7 @@
       </div>
     </section>
     <section id="faq">
-      <div class="bg-white z-20 relative px-6 lg:px-10 py-24 lg:py-16">
+      <div class="bg-white z-20 relative px-6 lg:px-20 py-24 lg:py-16">
         <h1
           class="text-3xl lg:text-4xl font-calistoga text-center leading-snug mb-8"
         >
@@ -477,49 +477,66 @@
     </section>
     <section id="footer">
       <footer
-        class="bg-white z-20 relative px-6 lg:px-10 py-24 border-t border-black/50"
+        class="bg-white z-20 relative px-6 lg:px-20 py-24 border-t border-black/50"
       >
-        <h3 class="font-medium text-center text-lg mb-6">
-          Stay connected with us by subscribing to our email updates.
-        </h3>
-        <div class="space-y-24 text-center">
-          <div class="flex h-[3.25rem]">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="bg-[#ddd] h-full rounded-[0.625rem] flex items-center pl-4 pr-6 placeholder:text-black w-[17.5rem] focus:outline-none"
-            />
-            <button
-              class="bg-[#BA4B1D] h-full rounded-[0.625rem] flex items-center px-8 text-white -translate-x-4"
+        <div
+          class="flex flex-col gap-24 lg:gap-0 lg:flex-row-reverse items-center justify-normal lg:justify-between text-center lg:text-left"
+        >
+          <div>
+            <h3 class="font-medium text-center text-lg mb-6">
+              Stay connected with us by subscribing to our email updates.
+            </h3>
+            <div class="flex h-[3rem] justify-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="bg-[#ddd] h-full rounded-[0.625rem] flex items-center pl-4 pr-6 placeholder:text-black w-full focus:outline-none"
+              />
+              <button
+                class="bg-[#BA4B1D] h-full rounded-[0.625rem] flex items-center px-4 text-white -translate-x-4"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div>
+            <div
+              class="flex items-center justify-center lg:justify-normal mb-24 lg:mb-16"
             >
-              Subscribe
-            </button>
+              <img
+                src="./src/assets/logo.svg"
+                alt="logo"
+                width="120"
+                height="120"
+              />
+              <div>
+                <p class="font-semibold text-xl text-left">Lorem Ipsum</p>
+                <p>Lorem Ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-24 lg:gap-16">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold mb-2">Quick Lines</h3>
+                <a class="text-lg" href="/">Home</a>
+                <a class="text-lg" href="/">Blog</a>
+                <a class="text-lg" href="/">Profile</a>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold mb-2">Socials</h3>
+                <a class="text-lg" href="/">Email</a>
+                <a class="text-lg" href="/">Facebook</a>
+                <a class="text-lg" href="/">Instagram</a>
+                <a class="text-lg" href="/">Twitter</a>
+              </div>
+              <h3 class="text-2xl font-bold">Recources</h3>
+            </div>
           </div>
-          <div class="flex flex-col gap-2 items-center">
-            <img
-              src="/src/assets/logo.svg"
-              alt="logo"
-              width="100"
-              height="100"
-            />
-            <p class="font-semibold text-xl">Lorem Ipsum</p>
-            <p>Lorem Ipsum dolor sit amet</p>
-          </div>
-          <div class="flex flex-col items-center gap-2">
-            <h3 class="text-2xl font-bold mb-2">Quick Lines</h3>
-            <a class="text-lg" href="/">Home</a>
-            <a class="text-lg" href="/">Blog</a>
-            <a class="text-lg" href="/">Profile</a>
-          </div>
-          <div class="flex flex-col items-center gap-2">
-            <h3 class="text-2xl font-bold mb-2">Socials</h3>
-            <a class="text-lg" href="/">Email</a>
-            <a class="text-lg" href="/">Facebook</a>
-            <a class="text-lg" href="/">Instagram</a>
-            <a class="text-lg" href="/">Twitter</a>
-          </div>
-          <h3 class="text-2xl font-bold">Recources</h3>
         </div>
+        <p
+          class="text-[#7c7c7c] text-lg text-center font-medium mt-24 lg:mt-16"
+        >
+          © 2023 Info Mendaki. All rights reserved.
+        </p>
       </footer>
     </section>
     <script>
@@ -531,10 +548,10 @@
         header.style.padding =
           window.pageYOffset > 16
             ? screen.width > 1024
-              ? "0.5rem 2.5rem"
+              ? "0.5rem 5rem"
               : "0.5rem 1.5rem"
             : screen.width > 1024
-            ? "1.5rem 2.5rem"
+            ? "1.5rem 5rem"
             : "1.5rem 1.5rem";
         header.style.boxShadow =
           window.pageYOffset > 16
