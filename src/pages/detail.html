@@ -14,8 +14,23 @@
     />
     <link href="../../dist/output.css" rel="stylesheet" />
     <style>
+      ::-webkit-scrollbar {
+        width: 4px;
+        height: 2px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #d9d9d9;
+        border-radius: 0.625rem;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ba4b1d;
+        border-radius: 0.625rem;
+      }
       .hero {
         background-image: url("../assets/merapi.png");
+      }
+      .rotate-x-180 {
+        transform: rotateX(180deg);
       }
     </style>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -135,7 +150,7 @@
       </div>
     </section>
     <section id="persiapan">
-      <div class="px-6 lg:px-20 py-8">
+      <div class="px-6 lg:px-20">
         <h1
           class="text-3xl lg:text-4xl font-calistoga text-center leading-snug mb-2"
         >
@@ -186,6 +201,346 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246687.63301682705!2d110.2353736984591!3d-7.487143746974022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a641ec0ff2fa5%3A0xe92612624cad8800!2sMount%20Merapi!5e0!3m2!1sen!2sid!4v1694266631357!5m2!1sen!2sid"
+        width="500"
+        height="500"
+        style="border: 0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="w-full py-16"
+      ></iframe>
+    </section>
+    <section id="trending-blog">
+      <div class="px-6 lg:px-20">
+        <div class="flex justify-between items-center mb-6 lg:mb-12">
+          <h1 class="text-2xl lg:text-4xl font-calistoga">What Others Say</h1>
+          <div class="flex items-center gap-2 lg:gap-4">
+            <button>
+              <i class="ph-bold ph-arrow-left text-[#BA4B1D] text-2xl"></i>
+            </button>
+            <button>
+              <i class="ph-bold ph-arrow-right text-[#BA4B1D] text-2xl"></i>
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex gap-6 pb-6 overflow-x-auto scroll-smooth"
+          style="transform: rotateX(180deg)"
+        >
+          <div
+            class="rotate-x-180 flex-none w-[13rem] bg-[#BA4B1D] text-white rounded-[0.625rem] flex items-center justify-center"
+          >
+            <div>
+              <div class="flex flex-col items-center justify-center mb-8">
+                <img
+                  src="../assets/logo.svg"
+                  alt="logo"
+                  width="80"
+                  height="80"
+                />
+                <h4 class="text-xl font-medium">Gunung Merapi</h4>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-2">
+                <button class="bg-black py-2 px-6 rounded-md">
+                  Write a review
+                </button>
+                <p class="text-xs">Share your experience!</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="rotate-x-180 flex-none w-[16rem] border-2 border-[#BA4B1D] rounded-[0.625rem] p-6"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
+              >
+                FH
+              </div>
+              <div class="tracking-[-1px]">
+                <h3 class="text-xl">Frenky Harry</h3>
+                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+              </div>
+            </div>
+            <p class="tracking-[-1px] font-medium">
+              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
+              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
+              dan sejarah vulkanik yang kuat.
+            </p>
+          </div>
+          <div
+            class="rotate-x-180 flex-none w-[16rem] border-2 border-[#BA4B1D] rounded-[0.625rem] p-6"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
+              >
+                FH
+              </div>
+              <div class="tracking-[-1px]">
+                <h3 class="text-xl">Frenky Harry</h3>
+                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+              </div>
+            </div>
+            <p class="tracking-[-1px] font-medium">
+              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
+              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
+              dan sejarah vulkanik yang kuat.
+            </p>
+          </div>
+          <div
+            class="rotate-x-180 flex-none w-[16rem] border-2 border-[#BA4B1D] rounded-[0.625rem] p-6"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
+              >
+                FH
+              </div>
+              <div class="tracking-[-1px]">
+                <h3 class="text-xl">Frenky Harry</h3>
+                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+              </div>
+            </div>
+            <p class="tracking-[-1px] font-medium">
+              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
+              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
+              dan sejarah vulkanik yang kuat.
+            </p>
+          </div>
+          <div
+            class="rotate-x-180 flex-none w-[16rem] border-2 border-[#BA4B1D] rounded-[0.625rem] p-6"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
+              >
+                FH
+              </div>
+              <div class="tracking-[-1px]">
+                <h3 class="text-xl">Frenky Harry</h3>
+                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+              </div>
+            </div>
+            <p class="tracking-[-1px] font-medium">
+              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
+              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
+              dan sejarah vulkanik yang kuat.
+            </p>
+          </div>
+          <div
+            class="rotate-x-180 flex-none w-[16rem] border-2 border-[#BA4B1D] rounded-[0.625rem] p-6"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
+              >
+                FH
+              </div>
+              <div class="tracking-[-1px]">
+                <h3 class="text-xl">Frenky Harry</h3>
+                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+              </div>
+            </div>
+            <p class="tracking-[-1px] font-medium">
+              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
+              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
+              dan sejarah vulkanik yang kuat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="trending-blog">
+      <div class="bg-[#BA4B1D] text-white px-6 lg:px-20 py-10 my-16">
+        <div class="flex justify-between items-center mb-10 lg:mb-12">
+          <h1 class="text-3xl lg:text-4xl font-calistoga">Related Blogs</h1>
+          <div class="flex items-center gap-2 lg:gap-4">
+            <button>
+              <i
+                class="ph-bold ph-arrow-left w-10 h-10 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl"
+              ></i>
+            </button>
+            <button>
+              <i
+                class="ph-bold ph-arrow-right w-10 h-10 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-12 pb-8 overflow-x-auto scroll-smooth">
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
+            <h3 class="text-xl">Gunung Semeru</h3>
+            <hr class="border border-white" />
+            <img
+              src="../assets/blog-1.svg"
+              alt="blog"
+              width="1000"
+              height="1000"
+              class="w-full"
+            />
+            <h4 class="text-lg font-medium">
+              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+            </h4>
+            <p class="font-light">By Falaq Lazuardi</p>
+          </div>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
+            <h3 class="text-xl">Gunung Semeru</h3>
+            <hr class="border border-white" />
+            <img
+              src="../assets/blog-1.svg"
+              alt="blog"
+              width="1000"
+              height="1000"
+              class="w-full"
+            />
+            <h4 class="text-lg font-medium">
+              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+            </h4>
+            <p class="font-light">By Falaq Lazuardi</p>
+          </div>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
+            <h3 class="text-xl">Gunung Semeru</h3>
+            <hr class="border border-white" />
+            <img
+              src="../assets/blog-1.svg"
+              alt="blog"
+              width="1000"
+              height="1000"
+              class="w-full"
+            />
+            <h4 class="text-lg font-medium">
+              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+            </h4>
+            <p class="font-light">By Falaq Lazuardi</p>
+          </div>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
+            <h3 class="text-xl">Gunung Semeru</h3>
+            <hr class="border border-white" />
+            <img
+              src="../assets/blog-1.svg"
+              alt="blog"
+              width="1000"
+              height="1000"
+              class="w-full"
+            />
+            <h4 class="text-lg font-medium">
+              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+            </h4>
+            <p class="font-light">By Falaq Lazuardi</p>
+          </div>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
+            <h3 class="text-xl">Gunung Semeru</h3>
+            <hr class="border border-white" />
+            <img
+              src="../assets/blog-1.svg"
+              alt="blog"
+              width="1000"
+              height="1000"
+              class="w-full"
+            />
+            <h4 class="text-lg font-medium">
+              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+            </h4>
+            <p class="font-light">By Falaq Lazuardi</p>
+          </div>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
+            <h3 class="text-xl">Gunung Semeru</h3>
+            <hr class="border border-white" />
+            <img
+              src="../assets/blog-1.svg"
+              alt="blog"
+              width="1000"
+              height="1000"
+              class="w-full"
+            />
+            <h4 class="text-lg font-medium">
+              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+            </h4>
+            <p class="font-light">By Falaq Lazuardi</p>
+          </div>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
+            <h3 class="text-xl">Gunung Semeru</h3>
+            <hr class="border border-white" />
+            <img
+              src="../assets/blog-1.svg"
+              alt="blog"
+              width="1000"
+              height="1000"
+              class="w-full"
+            />
+            <h4 class="text-lg font-medium">
+              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+            </h4>
+            <p class="font-light">By Falaq Lazuardi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <footer class="px-6 lg:px-20 py-10 border-t border-black/50">
+        <div
+          class="flex flex-col gap-24 lg:gap-0 lg:flex-row-reverse items-center justify-normal lg:justify-between text-center lg:text-left"
+        >
+          <div>
+            <h3 class="font-medium text-center text-lg mb-6">
+              Stay connected with us by subscribing to our email updates.
+            </h3>
+            <div class="flex h-[3rem] justify-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="bg-[#ddd] h-full rounded-[0.625rem] flex items-center pl-4 pr-6 placeholder:text-black w-full focus:outline-none"
+              />
+              <button
+                class="bg-[#BA4B1D] h-full rounded-[0.625rem] flex items-center px-4 text-white -translate-x-4"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div>
+            <div
+              class="flex items-center justify-center lg:justify-normal mb-24 lg:mb-16"
+            >
+              <img
+                src="../assets/logo.svg"
+                alt="logo"
+                width="120"
+                height="120"
+              />
+              <div>
+                <p class="font-semibold text-xl text-left">Lorem Ipsum</p>
+                <p>Lorem Ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-24 lg:gap-16">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold mb-2">Quick Lines</h3>
+                <a class="text-lg" href="/">Home</a>
+                <a class="text-lg" href="/">Blog</a>
+                <a class="text-lg" href="/">Profile</a>
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold mb-2">Socials</h3>
+                <a class="text-lg" href="/">Email</a>
+                <a class="text-lg" href="/">Facebook</a>
+                <a class="text-lg" href="/">Instagram</a>
+                <a class="text-lg" href="/">Twitter</a>
+              </div>
+              <h3 class="text-2xl font-bold">Recources</h3>
+            </div>
+          </div>
+        </div>
+        <p
+          class="text-[#7c7c7c] text-lg text-center font-medium mt-24 lg:mt-16"
+        >
+          © 2023 Info Mendaki. All rights reserved.
+        </p>
+      </footer>
     </section>
     <script>
       const header = document.getElementById("header-fr");
