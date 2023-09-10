@@ -26,11 +26,16 @@
         background: #ba4b1d;
         border-radius: 0.625rem;
       }
+      .rotate-x-180 {
+        transform: rotateX(180deg);
+      }
       .hero {
         background-image: url("../assets/merapi.png");
       }
-      .rotate-x-180 {
-        transform: rotateX(180deg);
+      @media (min-width: 1024px) {
+        .hero {
+          background-image: url("../assets/merapi-lg.png");
+        }
       }
     </style>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -62,12 +67,16 @@
     </section>
     <section id="hero">
       <div
-        class="hero h-[23rem] bg-cover bg-no-repeat relative text-white flex items-end px-6 py-8"
+        class="hero h-[23rem] lg:h-[25rem] bg-cover bg-no-repeat relative text-white flex items-end px-6 lg:px-20 py-8 lg:py-16"
       >
         <div class="absolute inset-0 bg-black/40"></div>
         <div class="z-10 w-full">
-          <h1 class="font-calistoga text-5xl mb-6">Merapi</h1>
-          <div class="flex justify-between items-center">
+          <h1
+            class="font-calistoga text-5xl lg:text-6xl mb-6 lg:absolute lg:text-center lg:inset-x-0 lg:mb-0"
+          >
+            Merapi
+          </h1>
+          <div class="flex justify-between items-center lg:z-20 lg:relative">
             <div class="flex items-center gap-2">
               <i class="ph-light ph-cloud-sun text-5xl"></i>
               <div class="text-lg">
@@ -93,7 +102,9 @@
     </section>
     <section id="details">
       <div class="px-6 lg:px-20 py-16 lg:py-24">
-        <div class="border border-[#BA4B1D] p-6 rounded-t-[0.625rem] space-y-6">
+        <div
+          class="border border-[#BA4B1D] p-6 lg:p-8 rounded-t-[0.625rem] space-y-6"
+        >
           <div
             class="flex items-end justify-between relative after:absolute after:-bottom-1 after:left-[75%] after:right-0 after:h-[2px] after:bg-[#7c7c7c]/50"
           >
@@ -125,10 +136,12 @@
             <h3 class="text-3xl font-medium tracking-[-2px]">5.500 m</h3>
           </div>
         </div>
-        <div class="rounded-b-[0.625rem] bg-[#BA4B1D] p-6 text-white">
-          <div class="flex justify-center items-center gap-2 mb-6">
-            <i class="ph ph-map-pin text-xl"></i>
-            <span class="text-xl tracking-[-1.5px]">Klaten, Jawa Tengah</span>
+        <div class="rounded-b-[0.625rem] bg-[#BA4B1D] p-6 lg:p-8 text-white">
+          <div class="flex justify-center items-center gap-2 mb-6 lg:mb-8">
+            <i class="ph ph-map-pin text-xl lg:text-2xl"></i>
+            <span class="text-xl lg:text-2xl tracking-[-1.5px]"
+              >Klaten, Jawa Tengah</span
+            >
           </div>
           <div class="flex justify-between gap-4">
             <div class="text-center">
@@ -144,6 +157,26 @@
             <div class="text-center">
               <h1 class="text-3xl mb-1 tracking-[-1.5px]">68.2%</h1>
               <p class="font-light tracking-[-1px]">Kelembaban</p>
+            </div>
+            <div class="w-[1.5px] bg-white hidden lg:block"></div>
+            <div class="text-center hidden lg:block">
+              <h1 class="text-3xl mb-1 tracking-[-1.5px]">Lvl 2</h1>
+              <p class="font-light tracking-[-1px]">Kesulitan Pendakian</p>
+            </div>
+            <div class="w-[1.5px] bg-white hidden lg:block"></div>
+            <div class="text-center hidden lg:block">
+              <h1 class="text-3xl mb-1 tracking-[-1.5px]">3 (Siaga)</h1>
+              <p class="font-light tracking-[-1px]">Tingkat Aktivitas</p>
+            </div>
+            <div class="w-[1.5px] bg-white hidden lg:block"></div>
+            <div class="text-center hidden lg:block">
+              <h1 class="text-3xl mb-1 tracking-[-1.5px]">0 - III</h1>
+              <p class="font-light tracking-[-1px]">Kabut</p>
+            </div>
+            <div class="w-[1.5px] bg-white hidden lg:block"></div>
+            <div class="text-center hidden lg:block">
+              <h1 class="text-3xl mb-1 tracking-[-1.5px]">75 m</h1>
+              <p class="font-light tracking-[-1px]">Asap kawah</p>
             </div>
           </div>
         </div>
@@ -210,7 +243,7 @@
         style="border: 0"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        class="w-full py-16"
+        class="w-full py-16 lg:h-[600px]"
       ></iframe>
     </section>
     <section id="trending-blog">
@@ -351,11 +384,71 @@
               dan sejarah vulkanik yang kuat.
             </p>
           </div>
+          <div
+            class="rotate-x-180 flex-none w-[16rem] border-2 border-[#BA4B1D] rounded-[0.625rem] p-6"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
+              >
+                FH
+              </div>
+              <div class="tracking-[-1px]">
+                <h3 class="text-xl">Frenky Harry</h3>
+                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+              </div>
+            </div>
+            <p class="tracking-[-1px] font-medium">
+              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
+              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
+              dan sejarah vulkanik yang kuat.
+            </p>
+          </div>
+          <div
+            class="rotate-x-180 flex-none w-[16rem] border-2 border-[#BA4B1D] rounded-[0.625rem] p-6"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
+              >
+                FH
+              </div>
+              <div class="tracking-[-1px]">
+                <h3 class="text-xl">Frenky Harry</h3>
+                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+              </div>
+            </div>
+            <p class="tracking-[-1px] font-medium">
+              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
+              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
+              dan sejarah vulkanik yang kuat.
+            </p>
+          </div>
+          <div
+            class="rotate-x-180 flex-none w-[16rem] border-2 border-[#BA4B1D] rounded-[0.625rem] p-6"
+          >
+            <div class="flex items-center gap-3 mb-6">
+              <div
+                class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
+              >
+                FH
+              </div>
+              <div class="tracking-[-1px]">
+                <h3 class="text-xl">Frenky Harry</h3>
+                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+              </div>
+            </div>
+            <p class="tracking-[-1px] font-medium">
+              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
+              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
+              dan sejarah vulkanik yang kuat.
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section id="trending-blog">
-      <div class="bg-[#BA4B1D] text-white px-6 lg:px-20 py-10 my-16">
+      <div class="bg-[#BA4B1D] text-white px-6 lg:px-20 py-10 my-16 lg:my-24">
         <div class="flex justify-between items-center mb-10 lg:mb-12">
           <h1 class="text-3xl lg:text-4xl font-calistoga">Related Blogs</h1>
           <div class="flex items-center gap-2 lg:gap-4">
@@ -481,7 +574,7 @@
       </div>
     </section>
     <section id="footer">
-      <footer class="px-6 lg:px-20 py-10 border-t border-black/50">
+      <footer class="px-6 lg:px-20 py-10 lg:py-16 border-t border-black/50">
         <div
           class="flex flex-col gap-24 lg:gap-0 lg:flex-row-reverse items-center justify-normal lg:justify-between text-center lg:text-left"
         >
