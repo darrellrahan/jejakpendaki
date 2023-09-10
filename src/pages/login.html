@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mason Mount</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <style>
+      .auth-bg {
+        background-image: url("../assets/auth-bg.svg");
+      }
+      .auth-bg-white {
+        background-image: url("../assets/auth-bg-white.svg");
+      }
+    </style>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="font-roboto">
+    <section id="login">
+      <div class="auth-bg h-screen bg-cover relative">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div
+          class="auth-bg-white z-10 relative h-screen bg-no-repeat px-6 lg:px-20 flex items-center"
+        >
+          <div class="w-[25.125rem] relative">
+            <h1 class="font-semibold text-[2.75rem] leading-[1.25]">
+              Welcome back!
+            </h1>
+            <p class="text-[#7c7c7c] text-lg mb-12 lg:mb-4">
+              Please enter your detail
+            </p>
+            <div class="flex flex-col gap-2">
+              <label for="email" class="font-medium text-lg">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="w-full h-[3.5rem] flex items-center px-4 border-[3px] border-[#D9D9D9] rounded-[0.625rem] bg-transparent"
+              />
+            </div>
+            <div class="flex flex-col gap-2 my-4">
+              <label for="password" class="font-medium text-lg">
+                Password
+              </label>
+              <div class="relative">
+                <input
+                  type="password"
+                  id="password"
+                  class="w-full h-[3.5rem] flex items-center px-4 border-[3px] border-[#D9D9D9] rounded-[0.625rem] bg-transparent"
+                />
+                <button
+                  class="absolute right-4 top-[0.85rem] text-[#7c7c7c] text-[1.5rem]"
+                >
+                  <i class="ph ph-eye"></i>
+                </button>
+              </div>
+              <a
+                href="/forgot"
+                class="text-right text-[#7c7c7c] text-sm hover:underline"
+              >
+                Forgot password?
+              </a>
+            </div>
+            <button
+              class="w-full h-[3.5rem] flex items-center justify-center border-2 border-[#BA4B1D] rounded-[0.625rem] bg-[#BA4B1D] text-white text-lg hover:bg-transparent hover:text-[#BA4B1D] duration-300 ease-linear font-medium"
+            >
+              Login
+            </button>
+            <div class="flex items-center gap-4 my-4">
+              <hr class="w-full border border-[#7c7c7c80]" />
+              <p class="text-[#7c7c7c] font-medium">OR</p>
+              <hr class="w-full border border-[#7c7c7c80]" />
+            </div>
+            <button
+              class="w-full h-[3.5rem] flex items-center justify-center border-2 border-[#BA4B1D] text-[#BA4B1D] rounded-[0.625rem] bg-transparent text-lg hover:bg-[#BA4B1D] hover:text-white hover:border-0 duration-300 ease-linear"
+            >
+              <div class="flex items-center gap-3">
+                <img
+                  src="../assets/google-logo.svg"
+                  alt="google"
+                  width="24"
+                  height="24"
+                />
+                <span class="font-medium">Login with Google</span>
+              </div>
+            </button>
+            <p
+              class="text-[#7c7c7c] font-medium text-center mt-16 lg:mt-8 w-full"
+            >
+              Don't have an account?
+              <a
+                href="/src/pages/register.html"
+                class="text-[#BA4B1D] underline hover:no-underline"
+              >
+                Register
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
