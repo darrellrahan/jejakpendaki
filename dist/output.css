@@ -746,10 +746,6 @@ video {
   animation: bounce 1s infinite;
 }
 
-.cursor-pointer {
-  cursor: pointer;
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -902,6 +898,10 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/assets\/merapi\.png\'\)\] {
+  background-image: url('../assets/merapi.png');
 }
 
 .bg-gradient-to-b {
@@ -1212,30 +1212,6 @@ video {
     right: 0px;
   }
 
-  .lg\:bottom-8 {
-    bottom: 2rem;
-  }
-
-  .lg\:bottom-12 {
-    bottom: 3rem;
-  }
-
-  .lg\:bottom-14 {
-    bottom: 3.5rem;
-  }
-
-  .lg\:bottom-16 {
-    bottom: 4rem;
-  }
-
-  .lg\:bottom-32 {
-    bottom: 8rem;
-  }
-
-  .lg\:bottom-0 {
-    bottom: 0px;
-  }
-
   .lg\:z-20 {
     z-index: 20;
   }
@@ -1248,14 +1224,13 @@ video {
     grid-row: span 2 / span 2;
   }
 
-  .lg\:my-20 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
   .lg\:my-24 {
     margin-top: 6rem;
     margin-bottom: 6rem;
+  }
+
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:mb-12 {
@@ -1266,16 +1241,12 @@ video {
     margin-bottom: 4rem;
   }
 
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
-
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .lg\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
 
   .lg\:block {
@@ -1294,24 +1265,16 @@ video {
     height: 17rem;
   }
 
-  .lg\:h-auto {
-    height: auto;
-  }
-
   .lg\:h-\[25rem\] {
     height: 25rem;
-  }
-
-  .lg\:h-\[28rem\] {
-    height: 28rem;
   }
 
   .lg\:h-\[600px\] {
     height: 600px;
   }
 
-  .lg\:w-full {
-    width: 100%;
+  .lg\:h-auto {
+    height: auto;
   }
 
   .lg\:basis-\[12\%\] {
@@ -1394,21 +1357,6 @@ video {
     padding-bottom: 6rem;
   }
 
-  .lg\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .lg\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
-  .lg\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
@@ -1425,9 +1373,19 @@ video {
     text-align: center;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:text-7xl {
@@ -1438,15 +1396,5 @@ video {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .lg\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 }
