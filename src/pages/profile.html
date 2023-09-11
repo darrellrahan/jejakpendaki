@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mason Mount</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <style>
+      .hero {
+        background-image: url("../assets/profile-hero-bg.svg");
+      }
+      .avatar {
+        background-image: url("../assets/avatar.svg");
+      }
+      @media (min-width: 1024px) {
+        .hero {
+          background-image: url("../assets/profile-hero-bg-lg.svg");
+        }
+      }
+    </style>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="font-roboto">
+    <section id="header">
+      <header
+        id="header-fr"
+        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-20 z-30 duration-300 ease-linear text-white"
+      >
+        <a href="/index.html">
+          <img src="../assets/logo.svg" alt="logo" width="100" height="100" />
+        </a>
+        <div class="hidden lg:flex items-center gap-12 text-lg">
+          <a href="/index.html">Home</a>
+          <a href="/">Blog</a>
+          <a href="/">About Us</a>
+          <a
+            href="/src/pages/login.html"
+            class="bg-[#BA4B1D] py-1.5 px-7 rounded-[0.625rem] text-white"
+          >
+            Login
+          </a>
+        </div>
+        <button class="text-4xl text-[#BA4B1D] lg:hidden">
+          <i class="ph ph-list"></i>
+        </button>
+      </header>
+    </section>
+    <section id="hero">
+      <div
+        class="hero h-[18rem] lg:h-[15rem] bg-cover bg-center bg-no-repeat relative"
+      >
+        <div
+          class="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-b from-zinc-300/[0.005] to-white"
+        ></div>
+      </div>
+    </section>
+    <section id="content">
+      <div class="px-6 lg:px-20 -mt-28 py-8">
+        <div
+          class="avatar bg-cover bg-no-repeat w-40 h-40 rounded-full relative mb-4"
+        >
+          <button class="absolute bottom-4 right-2">
+            <i
+              class="ph ph-pencil-simple border-[3px] border-white p-1.5 rounded-full bg-[#BA4B1D] text-white text-lg"
+            ></i>
+          </button>
+        </div>
+        <h1 class="text-2xl tracking-[-0.75px] font-medium">Eric McClean</h1>
+        <p class="text-lg tracking-[-0.75px] text-[#7c7c7c]/75 mb-8">
+          Love food, traveling, and hiking
+        </p>
+        <div
+          class="lg:w-[63rem] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10 mb-8"
+        >
+          <div class="flex flex-col gap-2">
+            <label for="about" class="font-medium text-lg text-[#7c7c7c]/75"
+              >About</label
+            >
+            <textarea
+              id="about"
+              class="w-full h-[7.5rem] lg:h-full py-2 px-4 border-[3px] border-[#D9D9D9] rounded-[0.625rem] bg-transparent"
+            >
+Love food, traveling, and hiking
+              </textarea
+            >
+          </div>
+          <div>
+            <div class="flex flex-col gap-2">
+              <label for="email" class="font-medium text-lg text-[#7c7c7c]/75"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                value="mccleaneric100@gmail.com"
+                class="w-full h-[3.5rem] flex items-center px-4 border-[3px] border-[#D9D9D9] rounded-[0.625rem] bg-transparent"
+              />
+            </div>
+            <div class="flex flex-col gap-2 mt-4">
+              <label
+                for="password"
+                class="font-medium text-lg text-[#7c7c7c]/75"
+              >
+                Password
+              </label>
+              <div class="relative">
+                <input
+                  type="password"
+                  id="password"
+                  value="password"
+                  class="w-full h-[3.5rem] flex items-center px-4 border-[3px] border-[#D9D9D9] rounded-[0.625rem] bg-transparent"
+                />
+                <button
+                  class="absolute right-4 top-[0.85rem] text-[#7c7c7c] text-[1.5rem]"
+                >
+                  <i class="ph ph-eye"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="w-full lg:w-[30.5rem] h-[3.5rem] flex items-center justify-between px-6 border border-2 border-[#BA4B1D] rounded-[0.625rem] bg-[#BA4B1D] text-lg text-white hover:bg-transparent hover:text-[#BA4B1D] duration-300 ease-linear"
+        >
+          <span>Save Changes</span>
+          <i class="ph ph-caret-circle-right text-2xl"></i>
+        </button>
+      </div>
+    </section>
+    <script>
+      const header = document.getElementById("header-fr");
+      window.addEventListener("scroll", () => {
+        header.style.backgroundColor =
+          window.pageYOffset > 16 ? "#FFF" : "transparent";
+        header.style.color = window.pageYOffset > 16 ? "#000" : "#FFF";
+        header.style.padding =
+          window.pageYOffset > 16
+            ? screen.width > 1024
+              ? "0.5rem 5rem"
+              : "0.5rem 1.5rem"
+            : screen.width > 1024
+            ? "1.5rem 5rem"
+            : "1.5rem 1.5rem";
+        header.style.boxShadow =
+          window.pageYOffset > 16
+            ? "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
+            : "0 0 #0000";
+      });
+    </script>
+  </body>
+</html>
