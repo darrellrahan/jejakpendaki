@@ -1061,6 +1061,10 @@ video {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\/src\/assets\/avatar\.svg\'\)\] {
+  background-image: url('./src/assets/avatar.svg');
+}
+
 .from-orange-700 {
   --tw-gradient-from: #c2410c var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(194 65 12 / 0) var(--tw-gradient-to-position);
