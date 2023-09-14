@@ -46,6 +46,44 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="font-roboto">
+    <section id="search" style="display: none">
+      <div class="fixed inset-0 bg-white z-[999999] p-6">
+        <div class="flex gap-6 items-start max-w-[60rem] mx-auto">
+          <button id="close-search">
+            <i
+              class="ph ph-arrow-left h-[3.5rem] flex items-center text-2xl text-[#7c7c7c]"
+            ></i>
+          </button>
+          <div class="flex flex-col gap-6 items-baseline w-full">
+            <input
+              type="search"
+              class="w-full h-[3.5rem] flex items-center px-4 border-[3px] border-[#D9D9D9] rounded-[0.625rem] bg-transparent"
+              placeholder="Search mountain or location"
+            />
+            <button class="flex items-center gap-4">
+              <i
+                class="ph ph-map-pin bg-zinc-300 rounded-lg border border-neutral-500 text-3xl p-2"
+              ></i
+              ><span>Search by location</span>
+            </button>
+            <div>
+              <h3 class="text-lg mb-3">Top Search</h3>
+              <div class="flex gap-3 flex-wrap text-sm">
+                <p class="px-6 py-[2px] rounded-lg border border-neutral-500">
+                  Rinjani
+                </p>
+                <p class="px-6 py-[2px] rounded-lg border border-neutral-500">
+                  Semeru
+                </p>
+                <p class="px-6 py-[2px] rounded-lg border border-neutral-500">
+                  Merbabu
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="header">
       <header
         id="header-fr"
@@ -98,6 +136,7 @@
             Bersama kami, setiap gunung menjadi tantangan yang menyenangkan
           </p>
           <button
+            id="open-search"
             class="rounded-full p-2 border-[3px] border-white w-[4.5rem] h-[4.5rem] flex items-center justify-center"
           >
             <i
@@ -544,6 +583,20 @@
           window.pageYOffset > 16
             ? "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
             : "0 0 #0000";
+      });
+
+      const openSearch = document.getElementById("open-search");
+      const closeSearch = document.getElementById("close-search");
+      const searchSection = document.getElementById("search");
+
+      openSearch.addEventListener("click", () => {
+        document.body.style.overflowY = "hidden";
+        searchSection.style.display = "block";
+      });
+
+      closeSearch.addEventListener("click", () => {
+        document.body.style.overflowY = "auto";
+        searchSection.style.display = "none";
       });
     </script>
   </body>
