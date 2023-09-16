@@ -98,12 +98,24 @@
           />
         </a>
         <div class="hidden lg:flex items-center gap-12 text-lg">
-          <a href="./index.html">Home</a>
-          <a href="./src/pages/blog.html">Blog</a>
-          <a href="/">About Us</a>
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:duration-300 after:ease-linear"
+            href="./index.html"
+            >Home</a
+          >
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:duration-300 after:ease-linear"
+            href="./src/pages/blog.html"
+            >Blog</a
+          >
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:duration-300 after:ease-linear"
+            href="/"
+            >About Us</a
+          >
           <a
             href="./src/pages/login.html"
-            class="bg-[#BA4B1D] py-1.5 px-7 rounded-[0.625rem] text-white"
+            class="bg-[#BA4B1D] w-[6rem] h-[2.5rem] flex items-center justify-center rounded-[0.625rem] text-white hover:scale-[0.9] duration-300 ease-linear"
           >
             Login
           </a>
@@ -135,12 +147,9 @@
           <p class="mb-4 lg:text-xl">
             Bersama kami, setiap gunung menjadi tantangan yang menyenangkan
           </p>
-          <button
-            id="open-search"
-            class="rounded-full p-2 border-[3px] border-white w-[4.5rem] h-[4.5rem] flex items-center justify-center"
-          >
+          <button id="open-search">
             <i
-              class="ph-bold ph-magnifying-glass w-12 h-12 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl"
+              class="ph-bold ph-magnifying-glass w-14 h-14 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-3xl duration-300 ease-linear relative after:absolute after:-inset-3 after:border-[3px] after:rounded-full hover:after:inset-0 hover:after:border-[#BA4B1D] after:duration-300 after:ease-linear hover:bg-[#BA4B1D] hover:text-white"
             ></i>
           </button>
         </div>
@@ -238,17 +247,22 @@
         </p>
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 text-white">
           <div
-            class="lg:col-span-3 h-[25rem] lg:h-[17rem] semeru bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
+            class="lg:col-span-3 h-[25rem] lg:h-[17rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
           >
-            <div class="absolute inset-0 bg-black/40 rounded-[0.625rem]"></div>
-            <div class="z-10 relative flex justify-between">
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] group-hover:bg-black/0 duration-300 ease-linear z-10"
+            ></div>
+            <div class="z-20 relative flex justify-between">
               <div>
                 <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
                 <p>3.676 mdpl</p>
               </div>
               <a href="./src/pages/detail.html">
                 <i
-                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl hover:bg-transparent hover:border-2 hover:text-white hover:border-white duration-300 ease-linear"
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-transparent text-white border-2 border-white rounded-full flex items-center justify-center text-2xl hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
                 ></i>
               </a>
             </div>
@@ -267,17 +281,22 @@
             </div>
           </div>
           <div
-            class="lg:row-span-2 h-[25rem] lg:h-auto rinjani bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
+            class="lg:row-span-2 h-[25rem] lg:h-auto rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
           >
-            <div class="absolute inset-0 bg-black/40 rounded-[0.625rem]"></div>
-            <div class="z-10 relative flex justify-between">
+            <div
+              class="absolute inset-0 rounded-[0.625rem] rinjani bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] group-hover:bg-black/0 duration-300 ease-linear z-10"
+            ></div>
+            <div class="z-20 relative flex justify-between">
               <div>
                 <h1 class="font-calistoga text-4xl mb-1">Rinjani</h1>
                 <p>3.726 mdpl</p>
               </div>
               <a href="./src/pages/detail.html">
                 <i
-                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl"
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-transparent text-white border-2 border-white rounded-full flex items-center justify-center text-2xl hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
                 ></i>
               </a>
             </div>
@@ -294,9 +313,14 @@
             </div>
           </div>
           <div
-            class="lg:col-span-3 h-[25rem] lg:h-[17rem] merapi bg-cover bg-no-repeat rounded-[0.625rem] relative flex flex-col justify-between p-6"
+            class="lg:col-span-3 h-[25rem] lg:h-[17rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
           >
-            <div class="absolute inset-0 bg-black/40 rounded-[0.625rem]"></div>
+            <div
+              class="absolute inset-0 rounded-[0.625rem] merapi bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] group-hover:bg-black/0 duration-300 ease-linear z-10"
+            ></div>
             <div class="z-10 relative flex justify-between">
               <div>
                 <h1 class="font-calistoga text-4xl mb-1">Merapi</h1>
@@ -304,7 +328,7 @@
               </div>
               <a href="./src/pages/detail.html">
                 <i
-                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl"
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-transparent text-white border-2 border-white rounded-full flex items-center justify-center text-2xl hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
                 ></i>
               </a>
             </div>
@@ -567,7 +591,21 @@
     </section>
     <script>
       const header = document.getElementById("header-fr");
+      const navLinks = document.getElementsByClassName("nav-link");
+
+      for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.add("after:bg-white");
+      }
+
       window.addEventListener("scroll", () => {
+        for (let i = 0; i < navLinks.length; i++) {
+          navLinks[i].classList.remove(
+            window.pageYOffset > 16 ? "after:bg-white" : "after:bg-black"
+          );
+          navLinks[i].classList.add(
+            window.pageYOffset > 16 ? "after:bg-black" : "after:bg-white"
+          );
+        }
         header.style.backgroundColor =
           window.pageYOffset > 16 ? "#FFF" : "transparent";
         header.style.color = window.pageYOffset > 16 ? "#000" : "#FFF";
