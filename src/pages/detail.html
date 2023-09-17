@@ -50,12 +50,24 @@
           <img src="../assets/logo.svg" alt="logo" width="100" height="100" />
         </a>
         <div class="hidden lg:flex items-center gap-12 text-lg">
-          <a href="../../index.html">Home</a>
-          <a href="./blog.html">Blog</a>
-          <a href="/">About Us</a>
           <a
-            href="./login.html"
-            class="bg-[#BA4B1D] py-1.5 px-7 rounded-[0.625rem] text-white"
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:duration-300 after:ease-linear"
+            href="../../index.html"
+            >Home</a
+          >
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:duration-300 after:ease-linear"
+            href="./blog.html"
+            >Blog</a
+          >
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:duration-300 after:ease-linear"
+            href="#footer"
+            >About Us</a
+          >
+          <a
+            href="./src/pages/login.html"
+            class="bg-[#BA4B1D] w-[6rem] h-[2.5rem] flex items-center justify-center rounded-[0.625rem] text-white hover:scale-[0.9] duration-300 ease-linear"
           >
             Login
           </a>
@@ -637,7 +649,21 @@
     </section>
     <script>
       const header = document.getElementById("header-fr");
+      const navLinks = document.getElementsByClassName("nav-link");
+
+      for (let i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.add("after:bg-white");
+      }
+
       window.addEventListener("scroll", () => {
+        for (let i = 0; i < navLinks.length; i++) {
+          navLinks[i].classList.remove(
+            window.pageYOffset > 16 ? "after:bg-white" : "after:bg-black"
+          );
+          navLinks[i].classList.add(
+            window.pageYOffset > 16 ? "after:bg-black" : "after:bg-white"
+          );
+        }
         header.style.backgroundColor =
           window.pageYOffset > 16 ? "#FFF" : "transparent";
         header.style.color = window.pageYOffset > 16 ? "#000" : "#FFF";

@@ -567,6 +567,10 @@ video {
   bottom: 1rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
 .right-2 {
   right: 0.5rem;
 }
@@ -581,10 +585,6 @@ video {
 
 .top-\[0\.85rem\] {
   top: 0.85rem;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .z-10 {
@@ -719,6 +719,10 @@ video {
   height: 10rem;
 }
 
+.h-\[11\.25rem\] {
+  height: 11.25rem;
+}
+
 .h-\[13rem\] {
   height: 13rem;
 }
@@ -767,12 +771,8 @@ video {
   height: 100vh;
 }
 
-.h-\[11\.25rem\] {
-  height: 11.25rem;
-}
-
-.h-16 {
-  height: 4rem;
+.max-h-0 {
+  max-height: 0px;
 }
 
 .w-10 {
@@ -829,10 +829,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .max-w-\[60rem\] {
@@ -1089,6 +1085,10 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black\/0 {
+  background-color: rgb(0 0 0 / 0);
+}
+
 .bg-black\/40 {
   background-color: rgb(0 0 0 / 0.4);
 }
@@ -1109,15 +1109,6 @@ video {
 .bg-zinc-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 216 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-black\/0 {
-  background-color: rgb(0 0 0 / 0);
 }
 
 .bg-gradient-to-b {
@@ -1242,6 +1233,16 @@ video {
   padding-bottom: 2px;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1260,6 +1261,14 @@ video {
 
 .pr-6 {
   padding-right: 1.5rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
 }
 
 .text-left {
@@ -1332,6 +1341,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -1577,31 +1591,15 @@ video {
   width: 100%;
 }
 
-.hover\:after\:w-fit:hover::after {
-  content: var(--tw-content);
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .hover\:after\:border-\[\#BA4B1D\]:hover::after {
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(186 75 29 / var(--tw-border-opacity));
 }
 
-.hover\:after\:bg-black:hover::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
-}
-
-.group:hover .group-hover\:inline-block {
-  display: inline-block;
 }
 
 .group:hover .group-hover\:scale-125 {
@@ -1772,10 +1770,6 @@ video {
 
   .lg\:justify-normal {
     justify-content: normal;
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
   }
 
   .lg\:justify-between {

@@ -27,18 +27,30 @@
     <section id="header">
       <header
         id="header-fr"
-        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-20 z-30 duration-300 ease-linear text-white"
+        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-20 z-30 duration-300 ease-linear"
       >
         <a href="../../index.html">
           <img src="../assets/logo.svg" alt="logo" width="100" height="100" />
         </a>
         <div class="hidden lg:flex items-center gap-12 text-lg">
-          <a href="../../index.html">Home</a>
-          <a href="./blog.html">Blog</a>
-          <a href="/">About Us</a>
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:bg-black after:duration-300 after:ease-linear"
+            href="../../index.html"
+            >Home</a
+          >
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:bg-black after:duration-300 after:ease-linear"
+            href="./blog.html"
+            >Blog</a
+          >
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:bg-black after:duration-300 after:ease-linear"
+            href="#footer"
+            >About Us</a
+          >
           <a
             href="./login.html"
-            class="bg-[#BA4B1D] py-1.5 px-7 rounded-[0.625rem] text-white"
+            class="bg-[#BA4B1D] w-[6rem] h-[2.5rem] flex items-center justify-center rounded-[0.625rem] text-white hover:scale-[0.9] duration-300 ease-linear"
           >
             Login
           </a>
@@ -241,6 +253,7 @@
     </section>
     <script>
       const header = document.getElementById("header-fr");
+
       window.addEventListener("scroll", () => {
         header.style.backgroundColor =
           window.pageYOffset > 16 ? "#FFF" : "transparent";

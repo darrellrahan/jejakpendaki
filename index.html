@@ -116,7 +116,7 @@
           >
           <a
             class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:duration-300 after:ease-linear"
-            href="/"
+            href="#footer"
             >About Us</a
           >
           <a
@@ -362,19 +362,19 @@
         <div class="flex justify-between items-center mb-10 lg:mb-12">
           <h1 class="text-3xl lg:text-4xl font-calistoga">Trending Blog</h1>
           <div class="flex items-center gap-2 lg:gap-4">
-            <button>
+            <button id="slider-prev">
               <i
                 class="ph-bold ph-arrow-left w-10 h-10 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl border-2 border-white hover:bg-transparent hover:text-white duration-300 ease-linear"
               ></i>
             </button>
-            <button>
+            <button id="slider-next">
               <i
                 class="ph-bold ph-arrow-right w-10 h-10 bg-white text-[#BA4B1D] rounded-full flex items-center justify-center text-2xl border-2 border-white hover:bg-transparent hover:text-white duration-300 ease-linear"
               ></i>
             </button>
           </div>
         </div>
-        <div class="flex gap-12 pb-8 overflow-x-auto scroll-smooth">
+        <div id="slider" class="flex gap-12 pb-8 overflow-x-auto scroll-smooth">
           <div class="flex-none w-[20.5rem] flex flex-col gap-4 group">
             <h3 class="text-xl">Gunung Semeru</h3>
             <hr class="border border-white" />
@@ -526,7 +526,7 @@
           FAQ
         </h1>
         <div class="space-y-6 text-xl">
-          <div class="border-b-2 border-[#BA4B1D] py-4">
+          <div class="border-b-2 border-[#BA4B1D]">
             <div class="flex justify-between gap-8">
               <h1 class="font-medium">
                 Dokumen apa saja yang perlu disiapkan?
@@ -535,6 +535,13 @@
                 <i class="ph-bold ph-plus text-[#BA4B1D] text-xl"></i>
               </button>
             </div>
+            <p class="text-base max-h-0 py-0 overflow-hidden">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
+              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
+              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
+              est aliquet ipsum, in pharetra lectus urna id mi.
+            </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
             <div class="flex justify-between gap-8">
@@ -610,16 +617,44 @@
             <div class="flex flex-col lg:flex-row gap-24 lg:gap-16">
               <div class="flex flex-col gap-2">
                 <h3 class="text-2xl font-bold mb-2">Quick Lines</h3>
-                <a class="text-lg" href="/">Home</a>
-                <a class="text-lg" href="/">Blog</a>
-                <a class="text-lg" href="/">Profile</a>
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Home</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Blog</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Profile</a
+                >
               </div>
               <div class="flex flex-col gap-2">
                 <h3 class="text-2xl font-bold mb-2">Socials</h3>
-                <a class="text-lg" href="/">Email</a>
-                <a class="text-lg" href="/">Facebook</a>
-                <a class="text-lg" href="/">Instagram</a>
-                <a class="text-lg" href="/">Twitter</a>
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Email</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Facebook</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Instagram</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Twitter</a
+                >
               </div>
               <h3 class="text-2xl font-bold">Recources</h3>
             </div>
@@ -678,6 +713,17 @@
       closeSearch.addEventListener("click", () => {
         document.body.style.overflowY = "auto";
         searchSection.style.display = "none";
+      });
+
+      const slider = document.getElementById("slider");
+      const sliderPrev = document.getElementById("slider-prev");
+      const sliderNext = document.getElementById("slider-next");
+
+      sliderPrev.addEventListener("click", () => {
+        slider.scrollLeft = slider.scrollLeft - 250;
+      });
+      sliderNext.addEventListener("click", () => {
+        slider.scrollLeft = slider.scrollLeft + 250;
       });
     </script>
   </body>
