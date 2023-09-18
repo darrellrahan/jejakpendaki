@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mason Mount</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <style>
+      .semeru {
+        background-image: url("../assets/semeru.png");
+      }
+      .rinjani {
+        background-image: url("../assets/rinjani.png");
+      }
+      .merapi {
+        background-image: url("../assets/merapi.png");
+      }
+    </style>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body class="font-roboto">
+    <section id="header">
+      <header
+        id="header-fr"
+        class="fixed inset-x-0 top-0 flex justify-between items-center p-6 lg:px-20 z-30 duration-300 ease-linear"
+      >
+        <a href="../../index.html">
+          <img src="../assets/logo.svg" alt="logo" width="100" height="100" />
+        </a>
+        <div class="hidden lg:flex items-center gap-12 text-lg">
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:bg-black after:duration-300 after:ease-linear"
+            href="../../index.html"
+            >Home</a
+          >
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:bg-black after:duration-300 after:ease-linear"
+            href="./blog.html"
+            >Blog</a
+          >
+          <a
+            class="nav-link relative after:absolute after:bottom-0 after:w-0 hover:after:w-full after:inset-x-0 after:h-[2px] after:bg-black after:duration-300 after:ease-linear"
+            href="#footer"
+            >About Us</a
+          >
+          <a
+            href="./login.html"
+            class="bg-[#BA4B1D] w-[6rem] h-[2.5rem] flex items-center justify-center rounded-[0.625rem] text-white hover:scale-[0.9] duration-300 ease-linear"
+          >
+            Login
+          </a>
+        </div>
+        <button class="text-4xl text-[#BA4B1D] lg:hidden">
+          <i class="ph ph-list"></i>
+        </button>
+      </header>
+    </section>
+    <section id="catalog">
+      <div class="px-6 lg:px-20 py-8 mt-24 mb-12 flex gap-16">
+        <div class="basis-1/5 space-y-6">
+          <div class="flex items-center gap-3">
+            <i class="ph ph-funnel text-3xl"></i>
+            <span class="text-lg">Filters</span>
+          </div>
+          <hr class="border border-[#7c7c7c60]" />
+          <div>
+            <h4 class="mb-3 text-lg font-medium">Suggested</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="cb1" />
+                <label for="cb1">< 1.000 mdpl</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="cb2" />
+                <label for="cb2">1.000 - 2.000 mdpl</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="cb3" />
+                <label for="cb3">2.000 - 3.000 mdpl</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="cb4" />
+                <label for="cb4">> 3.000 mdpl</label>
+              </div>
+            </div>
+          </div>
+          <hr class="border border-[#7c7c7c60]" />
+          <div>
+            <h4 class="mb-3 text-lg font-medium">Category</h4>
+            <div class="flex flex-wrap gap-3">
+              <button
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c]"
+              >
+                Most visited
+              </button>
+              <button
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c]"
+              >
+                Non active
+              </button>
+              <button
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c]"
+              >
+                ABCD
+              </button>
+            </div>
+          </div>
+          <hr class="border border-[#7c7c7c60]" />
+          <div>
+            <h4 class="mb-3 text-lg font-medium">Price</h4>
+            <div class="flex items-center justify-between gap-4">
+              <input
+                type="text"
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c] w-[47.5%]"
+              />
+              <hr class="border border-[#7c7c7c60] w-[5%]" />
+              <input
+                type="text"
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c] w-[47.5%]"
+              />
+            </div>
+          </div>
+          <button
+            class="w-full text-lg text-center py-2 rounded-lg bg-[#BA4B1D] text-white hover:scale-90 duration-300 ease-linear"
+          >
+            Apply
+          </button>
+        </div>
+        <div class="basis-4/5 grid grid-cols-3 gap-8 text-white">
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+          <div
+            class="h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+          >
+            <div
+              class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
+            ></div>
+            <div class="z-20">
+              <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
+              <p>3.676 mdpl</p>
+            </div>
+            <a
+              href="./detail.html"
+              class="text-center py-2 rounded-lg border-2 border-white z-20 hover:bg-white hover:text-[#BA4B1D] duration-300 ease-linear"
+              >See detail</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <footer
+        class="bg-white z-20 relative px-6 lg:px-20 py-24 border-t border-black/50"
+      >
+        <div
+          class="flex flex-col gap-24 lg:gap-0 lg:flex-row-reverse items-center justify-normal lg:justify-between text-center lg:text-left"
+        >
+          <div>
+            <h3 class="font-medium text-center text-lg mb-6">
+              Stay connected with us by subscribing to our email updates.
+            </h3>
+            <div class="flex h-[3rem] justify-center">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="bg-[#ddd] h-full rounded-[0.625rem] flex items-center pl-4 pr-6 placeholder:text-black w-full focus:outline-none"
+              />
+              <button
+                class="bg-[#BA4B1D] h-full rounded-[0.625rem] flex items-center w-32 flex justify-center text-white -translate-x-4 hover:text-[0.8rem] duration-300 ease-linear"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div>
+            <div
+              class="flex items-center justify-center lg:justify-normal mb-24 lg:mb-16"
+            >
+              <img
+                src="../assets/logo.svg"
+                alt="logo"
+                width="120"
+                height="120"
+              />
+              <div>
+                <p class="font-semibold text-xl text-left">Lorem Ipsum</p>
+                <p>Lorem Ipsum dolor sit amet</p>
+              </div>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-24 lg:gap-16">
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold mb-2">Quick Lines</h3>
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Home</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Blog</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Profile</a
+                >
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold mb-2">Socials</h3>
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Email</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Facebook</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Instagram</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="/"
+                  >Twitter</a
+                >
+              </div>
+              <h3 class="text-2xl font-bold">Recources</h3>
+            </div>
+          </div>
+        </div>
+        <p
+          class="text-[#7c7c7c] text-lg text-center font-medium mt-24 lg:mt-16"
+        >
+          © 2023 Info Mendaki. All rights reserved.
+        </p>
+      </footer>
+    </section>
+    <script>
+      const header = document.getElementById("header-fr");
+
+      window.addEventListener("scroll", () => {
+        header.style.backgroundColor =
+          window.pageYOffset > 16 ? "#FFF" : "transparent";
+        header.style.padding =
+          window.pageYOffset > 16
+            ? screen.width > 1024
+              ? "0.5rem 5rem"
+              : "0.5rem 1.5rem"
+            : screen.width > 1024
+            ? "1.5rem 5rem"
+            : "1.5rem 1.5rem";
+        header.style.boxShadow =
+          window.pageYOffset > 16
+            ? "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
+            : "0 0 #0000";
+      });
+    </script>
+  </body>
+</html>
