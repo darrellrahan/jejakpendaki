@@ -62,19 +62,14 @@
           </button>
           <div class="flex flex-col gap-6 items-baseline w-full">
             <input
+              id="search"
               type="search"
               class="w-full h-[3.5rem] flex items-center px-4 border-[3px] border-[#D9D9D9] rounded-[0.625rem] bg-transparent"
               placeholder="Search mountain or location"
             />
-            <button class="flex items-center gap-4">
-              <i
-                class="ph ph-map-pin bg-zinc-300 rounded-lg border border-neutral-500 text-3xl p-2"
-              ></i
-              ><span>Search by location</span>
-            </button>
             <div>
-              <h3 class="text-lg mb-3">Top Search</h3>
-              <div class="flex gap-3 flex-wrap text-sm">
+              <h3 class="text-xl mb-3">Top Search</h3>
+              <div class="flex gap-3 flex-wrap">
                 <p class="px-6 py-[2px] rounded-lg border border-neutral-500">
                   Rinjani
                 </p>
@@ -526,16 +521,18 @@
           FAQ
         </h1>
         <div class="space-y-6 text-xl">
-          <div class="border-b-2 border-[#BA4B1D]">
-            <div class="flex justify-between gap-8">
-              <h1 class="font-medium">
+          <div class="border-b-2 border-[#BA4B1D] py-4">
+            <button
+              class="question w-full flex justify-between items-center gap-8"
+            >
+              <h1 class="font-medium text-left">
                 Dokumen apa saja yang perlu disiapkan?
               </h1>
-              <button>
-                <i class="ph-bold ph-plus text-[#BA4B1D] text-xl"></i>
-              </button>
-            </div>
-            <p class="text-base max-h-0 py-0 overflow-hidden">
+              <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
+            </button>
+            <p
+              class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
               fermentum nibh vel felis tempor, vitae eleifend leo tempor.
               Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
@@ -544,33 +541,61 @@
             </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
-            <div class="flex justify-between gap-8">
-              <h1 class="font-medium">
-                Bagaimana mengurus izin untuk mendaki gunung?
+            <button
+              class="question w-full flex justify-between items-center gap-8"
+            >
+              <h1 class="font-medium text-left">
+                Dokumen apa saja yang perlu disiapkan?
               </h1>
-              <button>
-                <i class="ph-bold ph-plus text-[#BA4B1D] text-xl"></i>
-              </button>
-            </div>
+              <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
+            </button>
+            <p
+              class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
+              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
+              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
+              est aliquet ipsum, in pharetra lectus urna id mi.
+            </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
-            <div class="flex justify-between gap-8">
-              <h1 class="font-medium">Apa saja persiapan sebelum pendakian?</h1>
-              <button>
-                <i class="ph-bold ph-plus text-[#BA4B1D] text-xl"></i>
-              </button>
-            </div>
+            <button
+              class="question w-full flex justify-between items-center gap-8"
+            >
+              <h1 class="font-medium text-left">
+                Dokumen apa saja yang perlu disiapkan?
+              </h1>
+              <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
+            </button>
+            <p
+              class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
+              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
+              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
+              est aliquet ipsum, in pharetra lectus urna id mi.
+            </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
-            <div class="flex justify-between gap-8">
-              <h1 class="font-medium">
-                Bagaimana pencegahan bahaya dan pertolongan pertama saat mendaki
-                gunung?
+            <button
+              class="question w-full flex justify-between items-center gap-8"
+            >
+              <h1 class="font-medium text-left">
+                Dokumen apa saja yang perlu disiapkan?
               </h1>
-              <button>
-                <i class="ph-bold ph-plus text-[#BA4B1D] text-xl"></i>
-              </button>
-            </div>
+              <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
+            </button>
+            <p
+              class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
+              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
+              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
+              est aliquet ipsum, in pharetra lectus urna id mi.
+            </p>
           </div>
         </div>
       </div>
@@ -704,12 +729,10 @@
       const openSearch = document.getElementById("open-search");
       const closeSearch = document.getElementById("close-search");
       const searchSection = document.getElementById("search");
-
       openSearch.addEventListener("click", () => {
         document.body.style.overflowY = "hidden";
         searchSection.style.display = "block";
       });
-
       closeSearch.addEventListener("click", () => {
         document.body.style.overflowY = "auto";
         searchSection.style.display = "none";
@@ -718,12 +741,41 @@
       const slider = document.getElementById("slider");
       const sliderPrev = document.getElementById("slider-prev");
       const sliderNext = document.getElementById("slider-next");
-
       sliderPrev.addEventListener("click", () => {
-        slider.scrollLeft = slider.scrollLeft - 250;
+        slider.scrollLeft = slider.scrollLeft - 300;
       });
       sliderNext.addEventListener("click", () => {
-        slider.scrollLeft = slider.scrollLeft + 250;
+        slider.scrollLeft = slider.scrollLeft + 300;
+      });
+
+      const question = document.getElementsByClassName("question");
+      const answer = document.getElementsByClassName("answer");
+      const expandBtn = document.getElementsByClassName("expand-btn");
+      for (let i = 0; i < question.length; i++) {
+        question[i].addEventListener("click", () => {
+          if (answer[i].classList.contains("max-h-0")) {
+            expandBtn[i].classList.remove("ph-plus");
+            expandBtn[i].classList.add("ph-minus");
+            answer[i].classList.remove("max-h-0", "mt-0");
+            answer[i].classList.add("max-h-[12rem]", "lg:max-h-[4rem]", "mt-6");
+          } else {
+            expandBtn[i].classList.remove("ph-minus");
+            expandBtn[i].classList.add("ph-plus");
+            answer[i].classList.remove(
+              "max-h-[12rem]",
+              "lg:max-h-[4rem]",
+              "mt-6"
+            );
+            answer[i].classList.add("max-h-0", "mt-0");
+          }
+        });
+      }
+
+      const search = document.getElementById("search");
+      search.addEventListener("keydown", (e) => {
+        if (e.keyCode == "13") {
+          alert("work");
+        }
       });
     </script>
   </body>

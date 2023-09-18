@@ -20,6 +20,12 @@
         background-repeat: no-repeat;
         background-position: center;
       }
+      .blog-img {
+        background-image: url("../assets/blog-1.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     </style>
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
@@ -68,10 +74,17 @@
           <div>
             <h1 class="text-2xl mb-4 font-calistoga">Terbaru</h1>
             <div
-              class="h-[14rem] lg:h-[20rem] bg p-6 flex items-end text-white relative"
+              class="h-[14rem] lg:h-[20rem] bg p-6 flex items-end text-white relative group"
             >
               <div class="absolute inset-0 bg-black/40"></div>
-              <div class="z-10">
+              <button
+                class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+              >
+                <i
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                ></i>
+              </button>
+              <div class="z-20">
                 <h1 class="text-4xl font-calistoga mb-1">Title</h1>
                 <p class="text-lg">Penulis</p>
               </div>
@@ -79,16 +92,38 @@
           </div>
           <div>
             <h1 class="text-2xl mb-4 font-calistoga">Cerita Mendaki Populer</h1>
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <div class="h-[13rem] bg mb-4"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="group">
+                <div class="h-[13rem] bg mb-4 relative">
+                  <div
+                    class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                  ></div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                  >
+                    <i
+                      class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                    ></i>
+                  </button>
+                </div>
                 <h1 class="text-xl font-semibold mb-1 lg:mb-0">
                   Gunung Semeru: Tips dan Jalur
                 </h1>
                 <p>Creator</p>
               </div>
-              <div>
-                <div class="h-[13rem] bg mb-4"></div>
+              <div class="group">
+                <div class="h-[13rem] bg mb-4 relative">
+                  <div
+                    class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                  ></div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                  >
+                    <i
+                      class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                    ></i>
+                  </button>
+                </div>
                 <h1 class="text-xl font-semibold mb-1 lg:mb-0">
                   Gunung Semeru: Tips dan Jalur
                 </h1>
@@ -98,16 +133,38 @@
           </div>
           <div>
             <h1 class="text-2xl mb-4 font-calistoga">Cerita Horor Populer</h1>
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <div class="h-[13rem] bg mb-4"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="group">
+                <div class="h-[13rem] bg mb-4 relative">
+                  <div
+                    class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                  ></div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                  >
+                    <i
+                      class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                    ></i>
+                  </button>
+                </div>
                 <h1 class="text-xl font-semibold mb-1 lg:mb-0">
                   Gunung Semeru: Tips dan Jalur
                 </h1>
                 <p>Creator</p>
               </div>
-              <div>
-                <div class="h-[13rem] bg mb-4"></div>
+              <div class="group">
+                <div class="h-[13rem] bg mb-4 relative">
+                  <div
+                    class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                  ></div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                  >
+                    <i
+                      class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                    ></i>
+                  </button>
+                </div>
                 <h1 class="text-xl font-semibold mb-1 lg:mb-0">
                   Gunung Semeru: Tips dan Jalur
                 </h1>
@@ -119,16 +176,38 @@
             <h1 class="text-2xl mb-4 font-calistoga">
               Logistik Mendaki Populer
             </h1>
-            <div class="grid grid-cols-2 gap-4">
-              <div>
-                <div class="h-[13rem] bg mb-4"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <div class="group">
+                <div class="h-[13rem] bg mb-4 relative">
+                  <div
+                    class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                  ></div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                  >
+                    <i
+                      class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                    ></i>
+                  </button>
+                </div>
                 <h1 class="text-xl font-semibold mb-1 lg:mb-0">
                   Gunung Semeru: Tips dan Jalur
                 </h1>
                 <p>Creator</p>
               </div>
-              <div>
-                <div class="h-[13rem] bg mb-4"></div>
+              <div class="group">
+                <div class="h-[13rem] bg mb-4 relative">
+                  <div
+                    class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                  ></div>
+                  <button
+                    class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                  >
+                    <i
+                      class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                    ></i>
+                  </button>
+                </div>
                 <h1 class="text-xl font-semibold mb-1 lg:mb-0">
                   Gunung Semeru: Tips dan Jalur
                 </h1>
@@ -140,46 +219,61 @@
         <div class="basis-full lg:basis-[31%]">
           <h1 class="text-2xl font-calistoga mb-4">Trending Blog</h1>
           <div class="space-y-8">
-            <div class="flex flex-col">
+            <div class="flex flex-col group">
               <h3 class="text-xl">Gunung Semeru</h3>
               <hr class="border-[0.5px] border-black mt-2.5 mb-4" />
-              <img
-                src="../assets/blog-1.svg"
-                alt="blog"
-                width="1000"
-                height="1000"
-                class="w-full"
-              />
+              <div class="relative h-[14rem] blog-img">
+                <div
+                  class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                ></div>
+                <button
+                  class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                >
+                  <i
+                    class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                  ></i>
+                </button>
+              </div>
               <h4 class="text-lg font-medium leading-tight mt-4 mb-2">
                 Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
               </h4>
               <p>By Falaq Lazuardi</p>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col group">
               <h3 class="text-xl">Gunung Semeru</h3>
               <hr class="border-[0.5px] border-black mt-2.5 mb-4" />
-              <img
-                src="../assets/blog-1.svg"
-                alt="blog"
-                width="1000"
-                height="1000"
-                class="w-full"
-              />
+              <div class="relative h-[14rem] blog-img">
+                <div
+                  class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                ></div>
+                <button
+                  class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                >
+                  <i
+                    class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                  ></i>
+                </button>
+              </div>
               <h4 class="text-lg font-medium leading-tight mt-4 mb-2">
                 Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
               </h4>
               <p>By Falaq Lazuardi</p>
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col group">
               <h3 class="text-xl">Gunung Semeru</h3>
               <hr class="border-[0.5px] border-black mt-2.5 mb-4" />
-              <img
-                src="../assets/blog-1.svg"
-                alt="blog"
-                width="1000"
-                height="1000"
-                class="w-full"
-              />
+              <div class="relative h-[14rem] blog-img">
+                <div
+                  class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+                ></div>
+                <button
+                  class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+                >
+                  <i
+                    class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                  ></i>
+                </button>
+              </div>
               <h4 class="text-lg font-medium leading-tight mt-4 mb-2">
                 Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
               </h4>
