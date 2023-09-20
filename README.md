@@ -1,4 +1,4 @@
-<div align='center'><img src="./assets/logo-readme.png" alt="logo" width="100" height="100"/></div>
+<div align='center'><img src="./src/assets/logo-readme.png" alt="logo" width="100" height="100"/></div>
 
 <h2>About the project</h2>
 
