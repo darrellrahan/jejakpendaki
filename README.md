@@ -22,3 +22,12 @@
 » HTML <br>
 » CSS <br>
 » JavaScript
+
+<h3>How to run locally:</h3>
+
+1. Ekstrak file rar. <br>
+2. Klik kanan pada folder yang sudah diekstrak, lalu pilih "Open with VSCode". <br>
+3. Install terlebih dahulu extension "Live Server". <br>
+4. Jika extension "Live Server" sudah terinstall, Klik "Go Live" pada bagian bawah kanan editor. <br>
+
+Video lebih jelas: https://clipchamp.com/watch/4mpgZYWF7V1
