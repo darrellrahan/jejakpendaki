@@ -27,6 +27,45 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="font-roboto">
+    <section id="mobile-navbar">
+      <div
+        id="navbar-ct"
+        class="fixed inset-y-0 right-0 left-[150%] bg-white z-[999999] p-6 duration-300 ease-linear"
+      >
+        <div class="flex justify-end mb-12">
+          <button
+            id="close-navbar"
+            class="hover:rotate-[180deg] duration-300 ease-linear"
+          >
+            <i class="ph ph-x text-[#BA4B1D] text-4xl"></i>
+          </button>
+        </div>
+        <div class="flex flex-col gap-8">
+          <a
+            href="../../index.html"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >HOME</a
+          >
+          <a
+            href="./blog.html"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >BLOG</a
+          >
+          <a
+            id="to-footer"
+            href="#footer"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >ABOUT US</a
+          >
+          <a
+            href="./login.html"
+            class="bg-[#BA4B1D] text-center rounded-lg py-3 text-lg text-white hover:scale-[0.9] duration-300 ease-linear"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </section>
     <section id="header">
       <header
         id="header-fr"
@@ -58,7 +97,10 @@
             Login
           </a>
         </div>
-        <button class="text-4xl text-[#BA4B1D] lg:hidden">
+        <button
+          id="open-navbar"
+          class="text-4xl text-[#BA4B1D] lg:hidden hover:rotate-[180deg] duration-300 ease-linear"
+        >
           <i class="ph ph-list"></i>
         </button>
       </header>
@@ -155,17 +197,18 @@
           <div class="basis-full lg:basis-4/5">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 text-white">
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/merapi.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Merapi</h1>
+                  <p>2.930 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -174,17 +217,18 @@
                 >
               </div>
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/merbabu.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Merbabu</h1>
+                  <p>3.145 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -193,17 +237,18 @@
                 >
               </div>
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/sumbing.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Sumbing</h1>
+                  <p>3.371 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -212,17 +257,18 @@
                 >
               </div>
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/lawu.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Lawu</h1>
+                  <p>2.550 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -231,17 +277,18 @@
                 >
               </div>
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/slamet.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Slamet</h1>
+                  <p>3.424 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -250,17 +297,18 @@
                 >
               </div>
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/sindoro.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Sindoro</h1>
+                  <p>3.136 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -269,17 +317,18 @@
                 >
               </div>
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/terlomoyo.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Terlomoyo</h1>
+                  <p>1.894 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -288,17 +337,18 @@
                 >
               </div>
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/bisma.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Bisma</h1>
+                  <p>2.635 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -307,17 +357,18 @@
                 >
               </div>
               <div
-                class="h-[25rem] lg:h-[20rem] rounded-[0.625rem] relative flex flex-col justify-between p-6 group overflow-hidden"
+                class="h-[25rem] rounded-[0.625rem] relative flex flex-col justify-between px-6 py-8 lg:py-10 group overflow-hidden"
               >
                 <div
-                  class="absolute inset-0 rounded-[0.625rem] semeru bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  class="absolute inset-0 rounded-[0.625rem] bg-cover bg-no-repeat group-hover:scale-125 duration-300 ease-linear"
+                  style="background-image: url('../assets/unggaran.png')"
                 ></div>
                 <div
                   class="absolute inset-0 bg-black/40 rounded-[0.625rem] z-10"
                 ></div>
                 <div class="z-20">
-                  <h1 class="font-calistoga text-4xl mb-1">Semeru</h1>
-                  <p>3.676 mdpl</p>
+                  <h1 class="font-calistoga text-4xl mb-1">Unggaran</h1>
+                  <p>2.050 mdpl</p>
                 </div>
                 <a
                   href="./detail.html"
@@ -424,7 +475,6 @@
     </section>
     <script>
       const header = document.getElementById("header-fr");
-
       window.addEventListener("scroll", () => {
         header.style.backgroundColor =
           window.pageYOffset > 16 ? "#FFF" : "transparent";
@@ -441,6 +491,23 @@
             ? "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
             : "0 0 #0000";
       });
+
+      const openNavbar = document.getElementById("open-navbar");
+      const closeNavbar = document.getElementById("close-navbar");
+      const toFooter = document.getElementById("to-footer");
+      const navbarSection = document.getElementById("navbar-ct");
+      function closeNavbarFunc() {
+        document.body.style.overflowY = "auto";
+        navbarSection.classList.remove("left-0");
+        navbarSection.classList.add("left-[150%]");
+      }
+      openNavbar.addEventListener("click", () => {
+        document.body.style.overflowY = "hidden";
+        navbarSection.classList.remove("left-[150%]");
+        navbarSection.classList.add("left-0");
+      });
+      closeNavbar.addEventListener("click", closeNavbarFunc);
+      toFooter.addEventListener("click", closeNavbarFunc);
     </script>
   </body>
 </html>

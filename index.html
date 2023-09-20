@@ -49,8 +49,50 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="font-roboto">
-    <section id="search" style="display: none">
-      <div class="fixed inset-0 bg-white z-[999999] p-6">
+    <section id="mobile-navbar">
+      <div
+        id="navbar-ct"
+        class="fixed inset-y-0 right-0 left-[150%] bg-white z-[999999] p-6 duration-300 ease-linear"
+      >
+        <div class="flex justify-end mb-12">
+          <button
+            id="close-navbar"
+            class="hover:rotate-[180deg] duration-300 ease-linear"
+          >
+            <i class="ph ph-x text-[#BA4B1D] text-4xl"></i>
+          </button>
+        </div>
+        <div class="flex flex-col gap-8">
+          <a
+            href="./index.html"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >HOME</a
+          >
+          <a
+            href="./src/pages/blog.html"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >BLOG</a
+          >
+          <a
+            id="to-footer"
+            href="#footer"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >ABOUT US</a
+          >
+          <a
+            href="./src/pages/login.html"
+            class="bg-[#BA4B1D] text-center rounded-lg py-3 text-lg text-white hover:scale-[0.9] duration-300 ease-linear"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="search">
+      <div
+        id="search-ct"
+        class="fixed inset-y-0 right-0 left-[150%] bg-white z-[999999] p-6 duration-300 ease-linear"
+      >
         <div class="flex gap-6 items-start max-w-[60rem] mx-auto">
           <button id="close-search">
             <i
@@ -118,7 +160,10 @@
             Login
           </a>
         </div>
-        <button class="text-4xl text-[#BA4B1D] lg:hidden">
+        <button
+          id="open-navbar"
+          class="text-4xl text-[#BA4B1D] lg:hidden hover:rotate-[180deg] duration-300 ease-linear"
+        >
           <i class="ph ph-list"></i>
         </button>
       </header>
@@ -543,19 +588,16 @@
             <button
               class="question w-full flex justify-between items-center gap-8"
             >
-              <h1 class="font-medium text-left">
-                Dokumen apa saja yang perlu disiapkan?
-              </h1>
+              <h1 class="font-medium text-left">Apa itu JejakPendaki?</h1>
               <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
             </button>
             <p
               class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
-              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
-              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
-              est aliquet ipsum, in pharetra lectus urna id mi.
+              JejakPendaki adalah website informatif tentang pendakian gunung di
+              seluruh Indonesia yang akan menjadi sumber informasi utama bagi
+              para pendaki, baik yang sudah berpengalaman maupun yang masih
+              pemula.
             </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
@@ -563,18 +605,18 @@
               class="question w-full flex justify-between items-center gap-8"
             >
               <h1 class="font-medium text-left">
-                Dokumen apa saja yang perlu disiapkan?
+                Bagaimana JejakPendaki bekerja?
               </h1>
               <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
             </button>
             <p
               class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
-              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
-              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
-              est aliquet ipsum, in pharetra lectus urna id mi.
+              Kami akan merangkum secara komprehensif berbagai aspek yang
+              berkaitan dengan pendakian gunung, termasuk persiapan sebelum
+              mendaki suatu gunung, peraturan yang berlaku di gunung, jalur
+              pendakian yang tersedia, waktu-waktu terlarang untuk mendaki suatu
+              gunung, dan informasi seputar penyewaan porter di gunung.
             </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
@@ -582,18 +624,16 @@
               class="question w-full flex justify-between items-center gap-8"
             >
               <h1 class="font-medium text-left">
-                Dokumen apa saja yang perlu disiapkan?
+                Bagaimana saya mendapatkan informasi pendakian suatu gunung?
               </h1>
               <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
             </button>
             <p
               class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
-              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
-              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
-              est aliquet ipsum, in pharetra lectus urna id mi.
+              Pertama, Anda harus registrasi akun terlebih dahulu dan login
+              untuk mendapatkan informasi pendakian gunung terupdate secara tak
+              terbatas kami.
             </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
@@ -601,18 +641,46 @@
               class="question w-full flex justify-between items-center gap-8"
             >
               <h1 class="font-medium text-left">
-                Dokumen apa saja yang perlu disiapkan?
+                Apakah informasi pendakian yang dibagikan akan selalu terupdate?
               </h1>
               <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
             </button>
             <p
               class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
-              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
-              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
-              est aliquet ipsum, in pharetra lectus urna id mi.
+              Informasi yang kami berikan akan selalu diupdate 2 bulan sekali.
+            </p>
+          </div>
+          <div class="border-b-2 border-[#BA4B1D] py-4">
+            <button
+              class="question w-full flex justify-between items-center gap-8"
+            >
+              <h1 class="font-medium text-left">
+                Apakah saya bisa membuat dan membagikan blog saya?
+              </h1>
+              <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
+            </button>
+            <p
+              class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
+            >
+              Website kami saat ini masih belum memiliki fitur upload blog
+              pribadi.
+            </p>
+          </div>
+          <div class="border-b-2 border-[#BA4B1D] py-4">
+            <button
+              class="question w-full flex justify-between items-center gap-8"
+            >
+              <h1 class="font-medium text-left">
+                Bagaimana cara mengontak untuk info lebih lanjut?
+              </h1>
+              <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
+            </button>
+            <p
+              class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
+            >
+              Untuk info lebih lanjut, Anda bisa kontak kami melalui email
+              jejapendaki@gmail.com
             </p>
           </div>
         </div>
@@ -713,11 +781,9 @@
     <script>
       const header = document.getElementById("header-fr");
       const navLinks = document.getElementsByClassName("nav-link");
-
       for (let i = 0; i < navLinks.length; i++) {
         navLinks[i].classList.add("after:bg-white");
       }
-
       window.addEventListener("scroll", () => {
         for (let i = 0; i < navLinks.length; i++) {
           navLinks[i].classList.remove(
@@ -746,15 +812,34 @@
 
       const openSearch = document.getElementById("open-search");
       const closeSearch = document.getElementById("close-search");
-      const searchSection = document.getElementById("search");
+      const searchSection = document.getElementById("search-ct");
       openSearch.addEventListener("click", () => {
         document.body.style.overflowY = "hidden";
-        searchSection.style.display = "block";
+        searchSection.classList.remove("left-[150%]");
+        searchSection.classList.add("left-0");
       });
       closeSearch.addEventListener("click", () => {
         document.body.style.overflowY = "auto";
-        searchSection.style.display = "none";
+        searchSection.classList.remove("left-0");
+        searchSection.classList.add("left-[150%]");
       });
+
+      const openNavbar = document.getElementById("open-navbar");
+      const closeNavbar = document.getElementById("close-navbar");
+      const toFooter = document.getElementById("to-footer");
+      const navbarSection = document.getElementById("navbar-ct");
+      function closeNavbarFunc() {
+        document.body.style.overflowY = "auto";
+        navbarSection.classList.remove("left-0");
+        navbarSection.classList.add("left-[150%]");
+      }
+      openNavbar.addEventListener("click", () => {
+        document.body.style.overflowY = "hidden";
+        navbarSection.classList.remove("left-[150%]");
+        navbarSection.classList.add("left-0");
+      });
+      closeNavbar.addEventListener("click", closeNavbarFunc);
+      toFooter.addEventListener("click", closeNavbarFunc);
 
       const slider = document.getElementById("slider");
       const sliderPrev = document.getElementById("slider-prev");

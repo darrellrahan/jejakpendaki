@@ -41,6 +41,45 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="font-roboto">
+    <section id="mobile-navbar">
+      <div
+        id="navbar-ct"
+        class="fixed inset-y-0 right-0 left-[150%] bg-white z-[999999] p-6 duration-300 ease-linear"
+      >
+        <div class="flex justify-end mb-12">
+          <button
+            id="close-navbar"
+            class="hover:rotate-[180deg] duration-300 ease-linear"
+          >
+            <i class="ph ph-x text-[#BA4B1D] text-4xl"></i>
+          </button>
+        </div>
+        <div class="flex flex-col gap-8">
+          <a
+            href="../../index.html"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >HOME</a
+          >
+          <a
+            href="./blog.html"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >BLOG</a
+          >
+          <a
+            id="to-footer"
+            href="#footer"
+            class="pb-3 border-b-[1.75px] border-[#BA4B1D] font-medium text-4xl hover:-translate-y-2 duration-300 ease-linear"
+            >ABOUT US</a
+          >
+          <a
+            href="./login.html"
+            class="bg-[#BA4B1D] text-center rounded-lg py-3 text-lg text-white hover:scale-[0.9] duration-300 ease-linear"
+          >
+            Login
+          </a>
+        </div>
+      </div>
+    </section>
     <section id="header">
       <header
         id="header-fr"
@@ -72,7 +111,10 @@
             Login
           </a>
         </div>
-        <button class="text-4xl text-[#BA4B1D] lg:hidden">
+        <button
+          id="open-navbar"
+          class="text-4xl text-[#BA4B1D] lg:hidden hover:rotate-[180deg] duration-300 ease-linear"
+        >
           <i class="ph ph-list"></i>
         </button>
       </header>
@@ -210,18 +252,18 @@
               class="question w-full flex justify-between items-center gap-8"
             >
               <h1 class="font-medium text-left">
-                Dokumen apa saja yang perlu disiapkan?
+                Apa saja yang harus diperhatikan sebelum mendaki gunung ini?
               </h1>
               <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
             </button>
             <p
               class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
-              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
-              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
-              est aliquet ipsum, in pharetra lectus urna id mi.
+              Cuaca: Periksa perkiraan cuaca dan musim pendakian yang paling
+              aman. Izin: Pastikan Anda memiliki izin resmi dari pihak yang
+              berwenang. Kesehatan: Pastikan kondisi kesehatan Anda baik dan
+              siap untuk mendaki. Perlengkapan: Persiapkan perlengkapan yang
+              sesuai, termasuk pakaian, alas kaki, dan peralatan pendakian.
             </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
@@ -229,18 +271,16 @@
               class="question w-full flex justify-between items-center gap-8"
             >
               <h1 class="font-medium text-left">
-                Dokumen apa saja yang perlu disiapkan?
+                Apakah gunung ini cocok untuk pendaki pemula?
               </h1>
               <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
             </button>
             <p
               class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
-              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
-              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
-              est aliquet ipsum, in pharetra lectus urna id mi.
+              Gunung Merapi cenderung tidak cocok untuk pendaki pemula karena
+              kondisi alam yang berbahaya dan rawan erupsi. Disarankan untuk
+              memiliki pengalaman pendakian sebelum mencoba mendaki Merapi.
             </p>
           </div>
           <div class="border-b-2 border-[#BA4B1D] py-4">
@@ -248,37 +288,18 @@
               class="question w-full flex justify-between items-center gap-8"
             >
               <h1 class="font-medium text-left">
-                Dokumen apa saja yang perlu disiapkan?
+                Dimana saya registrasi untuk mendaki?
               </h1>
               <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
             </button>
             <p
               class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
-              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
-              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
-              est aliquet ipsum, in pharetra lectus urna id mi.
-            </p>
-          </div>
-          <div class="border-b-2 border-[#BA4B1D] py-4">
-            <button
-              class="question w-full flex justify-between items-center gap-8"
-            >
-              <h1 class="font-medium text-left">
-                Dokumen apa saja yang perlu disiapkan?
-              </h1>
-              <i class="ph-bold ph-plus expand-btn text-[#BA4B1D] text-xl"></i>
-            </button>
-            <p
-              class="answer text-base max-h-0 overflow-hidden mt-0 duration-300 ease-linear"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              fermentum nibh vel felis tempor, vitae eleifend leo tempor.
-              Suspendisse potenti. Nullam scelerisque mauris sit amet facilisis
-              pulvinar. Quisque dictum, metus sed efficitur condimentum, urna
-              est aliquet ipsum, in pharetra lectus urna id mi.
+              Registrasi pendaki dapat dilakukan melalui 3 pintu: Kantor Balai
+              Taman Nasional Gunung Merapi, Jl. Kaliurang Km. 22,6,
+              Hargobinagun, Pakem, Kabupaten Sleman, Provinsi DIY, Telp. (0274)
+              4478664, Fax. (0274) 4478665 Kantor Resort Selo Kantor Resort
+              Kemalang
             </p>
           </div>
         </div>
@@ -360,17 +381,18 @@
               <div
                 class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
               >
-                FH
+                FS
               </div>
               <div class="tracking-[-1px]">
-                <h3 class="text-xl">Frenky Harry</h3>
-                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+                <h3 class="text-xl">Ferdy Sambo</h3>
+                <p class="text-[#7C7C7C]">19 Jan 2023</p>
               </div>
             </div>
             <p class="tracking-[-1px] font-medium">
-              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
-              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
-              dan sejarah vulkanik yang kuat.
+              Ppengalaman yang luar biasa. Pemandangan dari puncaknya begitu
+              menakjubkan dengan danau kawah yang besar. Namun, perjalanan ini
+              tidak untuk yang lemah hati. Perlu persiapan yang matang dan fisik
+              yang kuat.
             </p>
           </div>
           <div
@@ -380,17 +402,18 @@
               <div
                 class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
               >
-                FH
+                DR
               </div>
               <div class="tracking-[-1px]">
-                <h3 class="text-xl">Frenky Harry</h3>
-                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+                <h3 class="text-xl">Darrell Rafa</h3>
+                <p class="text-[#7C7C7C]">18 Jan 2023</p>
               </div>
             </div>
             <p class="tracking-[-1px] font-medium">
-              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
-              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
-              dan sejarah vulkanik yang kuat.
+              Saat matahari terbit di Gunung ini, Anda akan merasa seolah-olah
+              berada di dunia lain. Lingkungan berbatu dan asap mengepul dari
+              kawah membuatnya terasa seperti pemandangan dari luar angkasa.
+              Sangat menakjubkan!
             </p>
           </div>
           <div
@@ -400,17 +423,17 @@
               <div
                 class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
               >
-                FH
+                PZ
               </div>
               <div class="tracking-[-1px]">
-                <h3 class="text-xl">Frenky Harry</h3>
-                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+                <h3 class="text-xl">Pamella Zahara</h3>
+                <p class="text-[#7C7C7C]">17 Jan 2023</p>
               </div>
             </div>
             <p class="tracking-[-1px] font-medium">
-              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
-              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
-              dan sejarah vulkanik yang kuat.
+              Perjalanan ke puncaknya adalah pencapaian yang luar biasa.
+              Panorama savana di jalur pendakian sangat indah, dan melihat
+              letusan gunung berapi adalah pengalaman yang tak terlupakan.
             </p>
           </div>
           <div
@@ -420,17 +443,17 @@
               <div
                 class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
               >
-                FH
+                A
               </div>
               <div class="tracking-[-1px]">
-                <h3 class="text-xl">Frenky Harry</h3>
-                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+                <h3 class="text-xl">Aura</h3>
+                <p class="text-[#7C7C7C]">16 Jan 2023</p>
               </div>
             </div>
             <p class="tracking-[-1px] font-medium">
-              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
-              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
-              dan sejarah vulkanik yang kuat.
+              Salah satu gunung berapi yang paling aktif di Indonesia. Meskipun
+              ada risiko, mendaki Merapi adalah pengalaman yang mendebarkan.
+              Pemandangan dari puncaknya adalah imbalan yang luar biasa.
             </p>
           </div>
           <div
@@ -440,17 +463,16 @@
               <div
                 class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
               >
-                FH
+                UB
               </div>
               <div class="tracking-[-1px]">
-                <h3 class="text-xl">Frenky Harry</h3>
-                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+                <h3 class="text-xl">Ucok Baba</h3>
+                <p class="text-[#7C7C7C]">14 Jan 2023</p>
               </div>
             </div>
             <p class="tracking-[-1px] font-medium">
-              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
-              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
-              dan sejarah vulkanik yang kuat.
+              Jalur pendakian yang teratur dan pemandangan indah menjadikannya
+              pilihan yang bagus untuk pendaki pemula.
             </p>
           </div>
           <div
@@ -460,17 +482,17 @@
               <div
                 class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
               >
-                FH
+                OG
               </div>
               <div class="tracking-[-1px]">
-                <h3 class="text-xl">Frenky Harry</h3>
-                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+                <h3 class="text-xl">Odo Gonzalez</h3>
+                <p class="text-[#7C7C7C]">13 Jan 2023</p>
               </div>
             </div>
             <p class="tracking-[-1px] font-medium">
-              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
-              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
-              dan sejarah vulkanik yang kuat.
+              Tantangan yang menantang. Tetapi ketika Anda mencapai puncaknya,
+              semua jerih payah terbayar. Anda dapat melihat awan di bawah Anda
+              dan hutan hujan yang luas di sekitar.
             </p>
           </div>
           <div
@@ -480,17 +502,17 @@
               <div
                 class="bg-gradient-to-b from-orange-700 to-yellow-950 rounded-full w-12 h-12 text-white text-xl flex items-center justify-center"
               >
-                FH
+                JT
               </div>
               <div class="tracking-[-1px]">
-                <h3 class="text-xl">Frenky Harry</h3>
-                <p class="text-[#7C7C7C]">20 Jan 2023</p>
+                <h3 class="text-xl">John Terry</h3>
+                <p class="text-[#7C7C7C]">26 Jan 2023</p>
               </div>
             </div>
             <p class="tracking-[-1px] font-medium">
-              Keindahan alam yang menakjub-kan, tapi perlu waspada aktivitas
-              vulkaniknya. Trek mendaki yang menantang, pemandangan spektakuler,
-              dan sejarah vulkanik yang kuat.
+              Gunung yang indah dengan banyak kawah aktif. Jalur pendakiannya
+              cukup mudah diakses, dan Anda dapat menikmati pemandangan alam
+              yang menakjubkan di sekitar gunung ini.
             </p>
           </div>
         </div>
@@ -514,110 +536,166 @@
           </div>
         </div>
         <div class="slider flex gap-12 pb-8 overflow-x-auto scroll-smooth">
-          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4 group">
+            <h3 class="text-xl">Gunung Rinjani</h3>
+            <hr class="border border-white" />
+            <div
+              class="relative h-[11.25rem] bg-cover bg-no-repeat bg-center"
+              style="background-image: url('../assets/rinjani.png')"
+            >
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+              ></div>
+              <button
+                class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+              >
+                <i
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                ></i>
+              </button>
+            </div>
+            <h4 class="text-lg font-medium">
+              Gunung Rinjani: Permata Tertinggi di Pulau Lombok
+            </h4>
+            <p class="font-light">By David Wollschlegel</p>
+          </div>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4 group">
             <h3 class="text-xl">Gunung Semeru</h3>
             <hr class="border border-white" />
-            <img
-              src="../assets/blog-1.svg"
-              alt="blog"
-              width="1000"
-              height="1000"
-              class="w-full"
-            />
+            <div
+              class="relative h-[11.25rem] bg-cover bg-no-repeat bg-center"
+              style="background-image: url('../assets/semeru.png')"
+            >
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+              ></div>
+              <button
+                class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+              >
+                <i
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                ></i>
+              </button>
+            </div>
             <h4 class="text-lg font-medium">
               Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
             </h4>
             <p class="font-light">By Falaq Lazuardi</p>
           </div>
-          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
-            <h3 class="text-xl">Gunung Semeru</h3>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4 group">
+            <h3 class="text-xl">Gunung Merapi</h3>
             <hr class="border border-white" />
-            <img
-              src="../assets/blog-1.svg"
-              alt="blog"
-              width="1000"
-              height="1000"
-              class="w-full"
-            />
+            <div
+              class="relative h-[11.25rem] bg-cover bg-no-repeat bg-center"
+              style="background-image: url('../assets/merapi.png')"
+            >
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+              ></div>
+              <button
+                class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+              >
+                <i
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                ></i>
+              </button>
+            </div>
             <h4 class="text-lg font-medium">
-              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+              Gunung Merapi: Keindahan Alam dan Sejarahnya
             </h4>
-            <p class="font-light">By Falaq Lazuardi</p>
+            <p class="font-light">By Stephen Odo</p>
           </div>
-          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
-            <h3 class="text-xl">Gunung Semeru</h3>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4 group">
+            <h3 class="text-xl">Gunung Merbabu</h3>
             <hr class="border border-white" />
-            <img
-              src="../assets/blog-1.svg"
-              alt="blog"
-              width="1000"
-              height="1000"
-              class="w-full"
-            />
+            <div
+              class="relative h-[11.25rem] bg-cover bg-no-repeat bg-center"
+              style="background-image: url('../assets/merbabu.png')"
+            >
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+              ></div>
+              <button
+                class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+              >
+                <i
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                ></i>
+              </button>
+            </div>
             <h4 class="text-lg font-medium">
-              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+              Gunung Merbabu: Pemandangan Alam Terbaik dan Pengalaman Mendaki
             </h4>
-            <p class="font-light">By Falaq Lazuardi</p>
+            <p class="font-light">By Dzawin Nur</p>
           </div>
-          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
-            <h3 class="text-xl">Gunung Semeru</h3>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4 group">
+            <h3 class="text-xl">Gunung Sumbing</h3>
             <hr class="border border-white" />
-            <img
-              src="../assets/blog-1.svg"
-              alt="blog"
-              width="1000"
-              height="1000"
-              class="w-full"
-            />
+            <div
+              class="relative h-[11.25rem] bg-cover bg-no-repeat bg-center"
+              style="background-image: url('../assets/sumbing.png')"
+            >
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+              ></div>
+              <button
+                class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+              >
+                <i
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                ></i>
+              </button>
+            </div>
             <h4 class="text-lg font-medium">
-              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+              Gunung Sumbing: Eksplorasi Ekosistem yang Menakjubkan
             </h4>
-            <p class="font-light">By Falaq Lazuardi</p>
+            <p class="font-light">By Aldi Taher</p>
           </div>
-          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
-            <h3 class="text-xl">Gunung Semeru</h3>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4 group">
+            <h3 class="text-xl">Gunung Lawu</h3>
             <hr class="border border-white" />
-            <img
-              src="../assets/blog-1.svg"
-              alt="blog"
-              width="1000"
-              height="1000"
-              class="w-full"
-            />
+            <div
+              class="relative h-[11.25rem] bg-cover bg-no-repeat bg-center"
+              style="background-image: url('../assets/lawu.png')"
+            >
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+              ></div>
+              <button
+                class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+              >
+                <i
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                ></i>
+              </button>
+            </div>
             <h4 class="text-lg font-medium">
-              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+              Puncak Gunung Lawu: Tempat Spiritual dan Wisata Keluarga
             </h4>
-            <p class="font-light">By Falaq Lazuardi</p>
+            <p class="font-light">By Risang Anggara</p>
           </div>
-          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
-            <h3 class="text-xl">Gunung Semeru</h3>
+          <div class="flex-none w-[20.5rem] flex flex-col gap-4 group">
+            <h3 class="text-xl">Gunung Jayawijaya</h3>
             <hr class="border border-white" />
-            <img
-              src="../assets/blog-1.svg"
-              alt="blog"
-              width="1000"
-              height="1000"
-              class="w-full"
-            />
+            <div
+              class="relative h-[11.25rem] bg-cover bg-no-repeat bg-center"
+              style="background-image: url('../assets/bisma.png')"
+            >
+              <div
+                class="absolute inset-0 bg-black/0 group-hover:bg-black/60 duration-300 ease-linear"
+              ></div>
+              <button
+                class="opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 z-10 duration-300 ease-linear"
+              >
+                <i
+                  class="ph-bold ph-arrow-up-right w-12 h-12 bg-white text-[#BA4B1D] border-2 border-white flex items-center justify-center text-2xl hover:bg-transparent hover:text-white duration-300 ease-linear"
+                ></i>
+              </button>
+            </div>
             <h4 class="text-lg font-medium">
-              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
+              Gunung Jayawijaya: Mendaki Puncak Tertinggi Papua
             </h4>
-            <p class="font-light">By Falaq Lazuardi</p>
-          </div>
-          <div class="flex-none w-[20.5rem] flex flex-col gap-4">
-            <h3 class="text-xl">Gunung Semeru</h3>
-            <hr class="border border-white" />
-            <img
-              src="../assets/blog-1.svg"
-              alt="blog"
-              width="1000"
-              height="1000"
-              class="w-full"
-            />
-            <h4 class="text-lg font-medium">
-              Panduan Terlengkap Mendaki Gunung Semeru: Tips dan Jalur
-            </h4>
-            <p class="font-light">By Falaq Lazuardi</p>
+            <p class="font-light">By Frets Butuan</p>
           </div>
         </div>
       </div>
@@ -717,11 +795,9 @@
     <script>
       const header = document.getElementById("header-fr");
       const navLinks = document.getElementsByClassName("nav-link");
-
       for (let i = 0; i < navLinks.length; i++) {
         navLinks[i].classList.add("after:bg-white");
       }
-
       window.addEventListener("scroll", () => {
         for (let i = 0; i < navLinks.length; i++) {
           navLinks[i].classList.remove(
@@ -747,6 +823,23 @@
             ? "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
             : "0 0 #0000";
       });
+
+      const openNavbar = document.getElementById("open-navbar");
+      const closeNavbar = document.getElementById("close-navbar");
+      const toFooter = document.getElementById("to-footer");
+      const navbarSection = document.getElementById("navbar-ct");
+      function closeNavbarFunc() {
+        document.body.style.overflowY = "auto";
+        navbarSection.classList.remove("left-0");
+        navbarSection.classList.add("left-[150%]");
+      }
+      openNavbar.addEventListener("click", () => {
+        document.body.style.overflowY = "hidden";
+        navbarSection.classList.remove("left-[150%]");
+        navbarSection.classList.add("left-0");
+      });
+      closeNavbar.addEventListener("click", closeNavbarFunc);
+      toFooter.addEventListener("click", closeNavbarFunc);
 
       const question = document.getElementsByClassName("question");
       const answer = document.getElementsByClassName("answer");
