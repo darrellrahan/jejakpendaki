@@ -66,6 +66,85 @@
         </div>
       </div>
     </section>
+    <section id="filter">
+      <div
+        id="filter-ct"
+        class="fixed inset-y-0 right-0 left-[150%] bg-white z-[999999] p-6 duration-300 ease-linear"
+      >
+        <div class="flex justify-end mb-12">
+          <button
+            id="close-filter"
+            class="hover:rotate-[180deg] duration-300 ease-linear"
+          >
+            <i class="ph ph-x text-[#BA4B1D] text-4xl"></i>
+          </button>
+        </div>
+        <div class="space-y-6">
+          <div>
+            <h4 class="mb-3 text-lg font-medium">Suggested</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="cb1" />
+                <label for="cb1">< 1.000 mdpl</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="cb2" />
+                <label for="cb2">1.000 - 2.000 mdpl</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="cb3" />
+                <label for="cb3">2.000 - 3.000 mdpl</label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input type="checkbox" id="cb4" />
+                <label for="cb4">> 3.000 mdpl</label>
+              </div>
+            </div>
+          </div>
+          <hr class="border border-[#7c7c7c60]" />
+          <div>
+            <h4 class="mb-3 text-lg font-medium">Category</h4>
+            <div class="flex flex-wrap gap-3">
+              <button
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c]"
+              >
+                Most visited
+              </button>
+              <button
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c]"
+              >
+                Non active
+              </button>
+              <button
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c]"
+              >
+                ABCD
+              </button>
+            </div>
+          </div>
+          <hr class="border border-[#7c7c7c60]" />
+          <div>
+            <h4 class="mb-3 text-lg font-medium">Price</h4>
+            <div class="flex items-center justify-between gap-4">
+              <input
+                type="text"
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c] w-[47.5%]"
+              />
+              <hr class="border border-[#7c7c7c60] w-[5%]" />
+              <input
+                type="text"
+                class="px-4 py-2 rounded-lg border border-[#7c7c7c60] text-[#7c7c7c] w-[47.5%]"
+              />
+            </div>
+          </div>
+          <button
+            class="w-full text-lg text-center py-2 rounded-lg bg-[#BA4B1D] text-white hover:scale-90 duration-300 ease-linear"
+          >
+            Apply
+          </button>
+        </div>
+      </div>
+    </section>
     <section id="header">
       <header
         id="header-fr"
@@ -73,7 +152,7 @@
       >
         <a href="../../index.html" class="flex items-center">
           <img src="../assets/logo.svg" alt="logo" width="100" height="100" />
-          <span class="text-black text-xl font-medium"
+          <span class="text-black text-xl font-medium hidden lg:inline-block"
             >Jejak<span class="text-[#BA4B1D]">Pendaki</span></span
           >
         </a>
@@ -122,10 +201,10 @@
             class="w-full h-[3.5rem] flex items-center px-4 border-[3px] border-[#D9D9D9] rounded-[0.625rem] bg-transparent"
             placeholder="Search mountain"
           />
-          <div class="flex items-center gap-1 lg:hidden">
+          <button id="open-filter" class="flex items-center gap-1 lg:hidden">
             <i class="ph ph-funnel text-xl"></i>
             <span>Filters</span>
-          </div>
+          </button>
         </div>
         <div class="flex gap-16">
           <div class="hidden lg:block basis-0 lg:basis-1/5 space-y-6">
@@ -415,14 +494,16 @@
               <img
                 src="../assets/logo.svg"
                 alt="logo"
-                width="120"
-                height="120"
+                width="100"
+                height="100"
               />
               <div>
                 <p class="font-semibold text-xl text-left">
                   Jejak<span class="text-[#BA4B1D]">Pendaki</span>
                 </p>
-                <p>Mengukir Petualangan di Setiap Jejak</p>
+                <p class="text-left text-sm">
+                  Mengukir Petualangan di Setiap Jejak
+                </p>
               </div>
             </div>
             <div class="flex flex-col lg:flex-row gap-24 lg:gap-16">
@@ -430,17 +511,17 @@
                 <h3 class="text-2xl font-bold mb-2">Quick Lines</h3>
                 <a
                   class="text-lg hover:underline duration-300 ease-linear"
-                  href="/"
+                  href="../../index.html"
                   >Home</a
                 >
                 <a
                   class="text-lg hover:underline duration-300 ease-linear"
-                  href="/"
+                  href="./blog.html"
                   >Blog</a
                 >
                 <a
                   class="text-lg hover:underline duration-300 ease-linear"
-                  href="/"
+                  href="./profile.html"
                   >Profile</a
                 >
               </div>
@@ -448,26 +529,48 @@
                 <h3 class="text-2xl font-bold mb-2">Socials</h3>
                 <a
                   class="text-lg hover:underline duration-300 ease-linear"
-                  href="/"
+                  href="https://www.gmail.com"
                   >Email</a
                 >
                 <a
                   class="text-lg hover:underline duration-300 ease-linear"
-                  href="/"
+                  href="https://www.facebook.com"
                   >Facebook</a
                 >
                 <a
                   class="text-lg hover:underline duration-300 ease-linear"
-                  href="/"
+                  href="https://www.instagram.com"
                   >Instagram</a
                 >
                 <a
                   class="text-lg hover:underline duration-300 ease-linear"
-                  href="/"
+                  href="https://www.twitter.com"
                   >Twitter</a
                 >
               </div>
-              <h3 class="text-2xl font-bold">Recources</h3>
+              <div class="flex flex-col gap-2">
+                <h3 class="text-2xl font-bold mb-2">Recources</h3>
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="https://www.unsplash.com"
+                  >Unsplash</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="https://www.wikipedia.com"
+                  >Wikipedia</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="https://www.pexels.com"
+                  >Pexels</a
+                >
+                <a
+                  class="text-lg hover:underline duration-300 ease-linear"
+                  href="https://www.google.com"
+                  >Google</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -513,6 +616,20 @@
       });
       closeNavbar.addEventListener("click", closeNavbarFunc);
       toFooter.addEventListener("click", closeNavbarFunc);
+
+      const openFilter = document.getElementById("open-filter");
+      const closeFilter = document.getElementById("close-filter");
+      const filterSection = document.getElementById("filter-ct");
+      openFilter.addEventListener("click", () => {
+        document.body.style.overflowY = "hidden";
+        filterSection.classList.remove("left-[150%]");
+        filterSection.classList.add("left-0");
+      });
+      closeFilter.addEventListener("click", () => {
+        document.body.style.overflowY = "auto";
+        filterSection.classList.remove("left-0");
+        filterSection.classList.add("left-[150%]");
+      });
     </script>
   </body>
 </html>
